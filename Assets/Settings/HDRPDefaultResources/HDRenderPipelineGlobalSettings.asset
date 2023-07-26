@@ -98,12 +98,18 @@ MonoBehaviour:
   autoRegisterDiffusionProfiles: 0
   apvScenesData:
     serializedBounds: []
-    serializedHasVolumes: []
-    serializedProfiles: []
-    serializedBakeSettings: []
-    serializedBakingSets:
-    - name: Default
-      sceneGUIDs: []
+    serializedHasVolumes:
+    - sceneGUID: 8124e5870f4fd4c779e7a5f994e84ad1
+      hasProbeVolumes: 0
+    - sceneGUID: 2685b3ad218b3394e86344281c57a8cf
+      hasProbeVolumes: 0
+    serializedProfiles:
+    - sceneGUID: 8124e5870f4fd4c779e7a5f994e84ad1
+      profile: {fileID: 11400000, guid: 2e36d76310ef47848b27437e55f1d040, type: 2}
+    - sceneGUID: 2685b3ad218b3394e86344281c57a8cf
+      profile: {fileID: 11400000, guid: 2e36d76310ef47848b27437e55f1d040, type: 2}
+    serializedBakeSettings:
+    - sceneGUID: 8124e5870f4fd4c779e7a5f994e84ad1
       settings:
         m_Version: 1
         dilationSettings:
@@ -121,7 +127,47 @@ MonoBehaviour:
           collisionMask:
             serializedVersion: 2
             m_Bits: 4294967291
-      profile: {fileID: 11400000, guid: 71c58d713655a834ba7018e53f5997e2, type: 2}
+    - sceneGUID: 2685b3ad218b3394e86344281c57a8cf
+      settings:
+        m_Version: 1
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+          rayOriginBias: -0.001
+          maxHitsPerRay: 10
+          collisionMask:
+            serializedVersion: 2
+            m_Bits: 4294967291
+    serializedBakingSets:
+    - name: Default
+      sceneGUIDs:
+      - 8124e5870f4fd4c779e7a5f994e84ad1
+      - 2685b3ad218b3394e86344281c57a8cf
+      settings:
+        m_Version: 1
+        dilationSettings:
+          enableDilation: 1
+          dilationDistance: 1
+          dilationValidityThreshold: 0.25
+          dilationIterations: 1
+          squaredDistWeighting: 1
+        virtualOffsetSettings:
+          useVirtualOffset: 1
+          outOfGeoOffset: 0.01
+          searchMultiplier: 0.2
+          rayOriginBias: -0.001
+          maxHitsPerRay: 10
+          collisionMask:
+            serializedVersion: 2
+            m_Bits: 4294967291
+      profile: {fileID: 11400000, guid: 2e36d76310ef47848b27437e55f1d040, type: 2}
       lightingScenarios:
       - Default
     m_LightingScenario: Default
