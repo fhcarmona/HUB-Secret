@@ -1,11 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ConfirmPopupController : MonoBehaviour
+namespace RMS
 {
-    public ConfirmPopupController(string title, bool choose)
+    public class ConfirmPopupController : MonoBehaviour
     {
+        public ConfirmPopupController(string title, bool choose)
+        {
 
+        }
     }
 }
