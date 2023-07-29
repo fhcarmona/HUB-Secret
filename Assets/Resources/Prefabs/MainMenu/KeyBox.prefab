@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8743532905169262684}
   - component: {fileID: 3034663284965910132}
-  - component: {fileID: 2250913686791355553}
+  - component: {fileID: 2645907633638988581}
   m_Layer: 5
   m_Name: KeyBox
   m_TagString: Untagged
@@ -66,7 +66,7 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &2250913686791355553
+--- !u!114 &2645907633638988581
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -78,9 +78,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9824aac75662d884a8cf7e9c680fa37b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _titleObject: {fileID: 8039026265418406243}
-  _primaryObject: {fileID: 8977048352468302431}
-  _secondaryObject: {fileID: 4998905912344629280}
+  title: {fileID: 8039026265418406243}
+  primary: {fileID: 8977048352468302431}
+  secondary: {fileID: 4998905912344629280}
 --- !u!1 &1952100917888911952
 GameObject:
   m_ObjectHideFlags: 0
@@ -338,7 +338,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2250913686791355553}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: KeyMapping, Assembly-CSharp
         m_MethodName: OnClickSecondaryBind
         m_Mode: 1
@@ -807,7 +807,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2250913686791355553}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: KeyMapping, Assembly-CSharp
         m_MethodName: OnClickPrimaryKeyBind
         m_Mode: 1

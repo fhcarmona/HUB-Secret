@@ -260,7 +260,19 @@ MonoBehaviour:
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 159910341}
+        m_TargetAssemblyTypeName: Graphics, Assembly-CSharp
+        m_MethodName: OnChangeWindowMode
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &26746577
 MonoBehaviour:
@@ -1230,6 +1242,7 @@ GameObject:
   m_Component:
   - component: {fileID: 159910339}
   - component: {fileID: 159910340}
+  - component: {fileID: 159910341}
   m_Layer: 5
   m_Name: GraphicsContent
   m_TagString: Untagged
@@ -1285,6 +1298,23 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &159910341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 159910338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1000439c56bff324795470b8cde8f4eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  display: {fileID: 623647221}
+  resolution: {fileID: 1949968082}
+  textureQuality: {fileID: 701774683}
+  windowMode: {fileID: 26746576}
+  vSync: {fileID: 1513291686}
 --- !u!1 &211625499
 GameObject:
   m_ObjectHideFlags: 0
@@ -1764,7 +1794,19 @@ MonoBehaviour:
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1705316708}
+        m_TargetAssemblyTypeName: Audio, Assembly-CSharp
+        m_MethodName: OnChangeAudioOutput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &260074814
 MonoBehaviour:
@@ -2682,7 +2724,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -625}
+  m_AnchoredPosition: {x: 250, y: -125}
   m_SizeDelta: {x: 300, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &354566617
@@ -3224,10 +3266,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47d66baf5a8766241932173ba4f03b38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _graphicsOptions: {fileID: 159910338}
-  _audioOptions: {fileID: 1705316705}
-  _controllerOptions: {fileID: 2020735064}
-  _accessibilityOptions: {fileID: 1756365771}
+  graphicsOptions: {fileID: 159910338}
+  audioOptions: {fileID: 1705316705}
+  controllerOptions: {fileID: 2020735064}
+  accessibilityOptions: {fileID: 1756365771}
 --- !u!1 &445592922
 GameObject:
   m_ObjectHideFlags: 0
@@ -4393,7 +4435,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -125}
+  m_AnchoredPosition: {x: 250, y: -375}
   m_SizeDelta: {x: 300, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &571084973
@@ -4610,7 +4652,19 @@ MonoBehaviour:
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 159910341}
+        m_TargetAssemblyTypeName: Graphics, Assembly-CSharp
+        m_MethodName: OnChangeDisplayOutput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &623647222
 MonoBehaviour:
@@ -4740,7 +4794,19 @@ MonoBehaviour:
   m_Value: 80
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1705316708}
+        m_TargetAssemblyTypeName: Audio, Assembly-CSharp
+        m_MethodName: OnChangeMusicVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &628298520
 GameObject:
   m_ObjectHideFlags: 0
@@ -5387,7 +5453,19 @@ MonoBehaviour:
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 159910341}
+        m_TargetAssemblyTypeName: Graphics, Assembly-CSharp
+        m_MethodName: OnChangeTextureQuality
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &701774684
 MonoBehaviour:
@@ -5725,6 +5803,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 722007459}
   m_CullTransparentMesh: 1
+--- !u!1 &765473934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 765473936}
+  - component: {fileID: 765473935}
+  m_Layer: 0
+  m_Name: DataPersistence
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &765473935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765473934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee6affb2b96e0c34fb7493cfae0390ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &765473936
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765473934}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 32.93244, y: 448.93567, z: -3.2461338}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &770601855
 GameObject:
   m_ObjectHideFlags: 0
@@ -5967,7 +6089,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 200}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 375, y: 375}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &826732121
@@ -6008,9 +6130,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f62eaacdb233f340a98a01b4cdc81f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _newGame: {fileID: 906378231}
-  _options: {fileID: 445347491}
-  _quit: {fileID: 513872047}
+  newGame: {fileID: 906378231}
+  options: {fileID: 445347491}
+  quit: {fileID: 513872047}
 --- !u!1 &834596092
 GameObject:
   m_ObjectHideFlags: 0
@@ -6299,7 +6421,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &862738984
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6364,7 +6486,43 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 862738986}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 159910341}
+        m_TargetAssemblyTypeName: Graphics, Assembly-CSharp
+        m_MethodName: OnClickSave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1705316708}
+        m_TargetAssemblyTypeName: Audio, Assembly-CSharp
+        m_MethodName: OnClickSave
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 765473935}
+        m_TargetAssemblyTypeName: RMS.DataPersistenceSystem, Assembly-CSharp
+        m_MethodName: SaveConfiguration
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &862738986
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6850,7 +7008,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1732.5, y: -855}
+  m_AnchoredPosition: {x: 1732.5, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &911394545
@@ -8386,7 +8544,19 @@ MonoBehaviour:
   m_Value: 80
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1705316708}
+        m_TargetAssemblyTypeName: Audio, Assembly-CSharp
+        m_MethodName: OnChangeAudioVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1326420843
 GameObject:
   m_ObjectHideFlags: 0
@@ -9807,7 +9977,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 250, y: -375}
+  m_AnchoredPosition: {x: 250, y: -625}
   m_SizeDelta: {x: 300, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1513291686
@@ -9856,7 +10026,19 @@ MonoBehaviour:
   m_Group: {fileID: 0}
   onValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 159910341}
+        m_TargetAssemblyTypeName: Graphics, Assembly-CSharp
+        m_MethodName: OnChangeVSync
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!1 &1527438116
 GameObject:
@@ -9876,7 +10058,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1527438117
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9941,7 +10123,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1527438119}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 159910341}
+        m_TargetAssemblyTypeName: Graphics, Assembly-CSharp
+        m_MethodName: OnClickCancel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1527438119
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11002,6 +11196,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1705316706}
   - component: {fileID: 1705316707}
+  - component: {fileID: 1705316708}
   m_Layer: 5
   m_Name: AudioContent
   m_TagString: Untagged
@@ -11058,6 +11253,21 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &1705316708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705316705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a2a3aacbf6a20c4f993a7ed37bd2fc0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffectVolume: {fileID: 1305780177}
+  musicVolume: {fileID: 625464091}
+  audioOutputDevice: {fileID: 260074813}
 --- !u!1 &1726728122
 GameObject:
   m_ObjectHideFlags: 0
@@ -12654,7 +12864,19 @@ MonoBehaviour:
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 159910341}
+        m_TargetAssemblyTypeName: Graphics, Assembly-CSharp
+        m_MethodName: OnChangeResolution
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_AlphaFadeSpeed: 0.15
 --- !u!114 &1949968083
 MonoBehaviour:

@@ -4,57 +4,52 @@ namespace RMS
 {
     public class OptionsController : MonoBehaviour
     {
-        [Header("OptionsMenu")]
-        [SerializeField]
-        private GameObject _graphicsOptions;
-        [SerializeField]
-        private GameObject _audioOptions;
-        [SerializeField]
-        private GameObject _controllerOptions;
-        [SerializeField]
-        private GameObject _accessibilityOptions;
-
-        private void DeactivateOptions(GameObject activeOption)
-        {
-            if (_graphicsOptions.name != activeOption.name)
-                _graphicsOptions.SetActive(false);
-
-            if (_audioOptions.name != activeOption.name)
-                _audioOptions.SetActive(false);
-
-            if (_controllerOptions.name != activeOption.name)
-                _controllerOptions.SetActive(false);
-
-            if (_accessibilityOptions.name != activeOption.name)
-                _accessibilityOptions.SetActive(false);
-        }
+        [Header("GameObject List")]
+        public GameObject graphicsOptions;
+        public GameObject audioOptions;
+        public GameObject controllerOptions;
+        public GameObject accessibilityOptions;       
 
         public void OnClickGraphics()
         {
-            DeactivateOptions(_graphicsOptions);
+            DeactivateOptions(graphicsOptions);
 
-            _graphicsOptions.SetActive(true);
+            graphicsOptions.SetActive(true);
         }
 
         public void OnClickAudio()
         {
-            DeactivateOptions(_audioOptions);
+            DeactivateOptions(audioOptions);
 
-            _audioOptions.SetActive(true);
+            audioOptions.SetActive(true);
         }
 
         public void OnClickController()
         {
-            DeactivateOptions(_controllerOptions);
+            DeactivateOptions(controllerOptions);
 
-            _controllerOptions.SetActive(true);
+            controllerOptions.SetActive(true);
         }
 
         public void OnClickAccessibility()
         {
-            DeactivateOptions(_accessibilityOptions);
+            DeactivateOptions(accessibilityOptions);
 
-            _accessibilityOptions.SetActive(true);
+            accessibilityOptions.SetActive(true);
+        }
+        private void DeactivateOptions(GameObject activeOption)
+        {
+            if (graphicsOptions.name != activeOption.name)
+                graphicsOptions.SetActive(false);
+
+            if (audioOptions.name != activeOption.name)
+                audioOptions.SetActive(false);
+
+            if (controllerOptions.name != activeOption.name)
+                controllerOptions.SetActive(false);
+
+            if (accessibilityOptions.name != activeOption.name)
+                accessibilityOptions.SetActive(false);
         }
     }
 }
