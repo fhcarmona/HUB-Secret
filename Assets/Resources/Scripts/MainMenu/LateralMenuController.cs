@@ -10,7 +10,7 @@ namespace RMS
         public GameObject options;
         public GameObject quit;
 
-        private const string newGameSceneName = "Shopping";
+        private const string newGameSceneName = "Mall";
 
         public void OnClickNewGame()
         {
