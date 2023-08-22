@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace RMS
 {
@@ -9,10 +10,14 @@ namespace RMS
         public GameObject options;
         public GameObject quit;
 
+        private const string newGameSceneName = "Shopping";
+
         public void OnClickNewGame()
         {
             ClearWindows();
             newGame.SetActive(!newGame.activeSelf);
+
+            LoadingPersistence.LoadScene(newGameSceneName);
         }
 
         public void OnClickOptions()
