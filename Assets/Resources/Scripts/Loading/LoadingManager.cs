@@ -32,7 +32,9 @@ public class LoadingManager : MonoBehaviour
     void Start()
     {
         StartCoroutine(ChangeCurrentModel());
-        StartCoroutine(LoadSceneAsync(LoadingPersistence.nextScene));
+
+        if(LoadingPersistence.nextScene != null)
+            StartCoroutine(LoadSceneAsync(LoadingPersistence.nextScene));
     }
 
     void LateUpdate()
