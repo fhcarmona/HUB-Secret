@@ -1,5 +1,10 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace RMS
@@ -7,7 +12,6 @@ namespace RMS
     public class Graphics : MonoBehaviour
     {
         [Header("Dropdown List")]
-        public TMP_Dropdown display;
         public TMP_Dropdown resolution;
         public TMP_Dropdown textureQuality;
         public TMP_Dropdown windowMode;
@@ -15,9 +19,14 @@ namespace RMS
         [Header("Toggle List")]
         public Toggle vSync;
 
+        [Header("Pipeline List")]
+        public RenderPipelineAsset[] renderPipeline;
+
         private GraphicsModel _graphicsModel;
 
-        public void Start()
+        private const string resolutionSplitChar = "x";
+
+        public void Awake()
         {
             SetConfigurationData();
         }
@@ -46,7 +55,13 @@ namespace RMS
         public void OnClickSave()
         {
             if (_graphicsModel != null)
+            {
                 DataPersistenceSystem.configurationModel.graphicsModel = _graphicsModel;
+                QualitySettings.vSyncCount = Convert.ToInt32(vSync.isOn);
+                QualitySettings.SetQualityLevel(textureQuality.value);
+                QualitySettings.renderPipeline = renderPipeline[textureQuality.value];
+                SetResolutionByString(resolution.options[_graphicsModel.resolution].text);
+            }
         }
 
         public void OnClickCancel()
@@ -59,13 +74,21 @@ namespace RMS
             _graphicsModel = DataPersistenceSystem.configurationModel.graphicsModel;
 
             // Dropdown
-            display.value = _graphicsModel.displayOutput;
             resolution.value = _graphicsModel.resolution;
             windowMode.value = _graphicsModel.windowMode;
             textureQuality.value = _graphicsModel.textureQuality;
 
             // Toggle
             vSync.isOn = _graphicsModel.vSync;
+        }
+
+        private void SetResolutionByString(string resolution)
+        {
+            string[] splitValues;
+
+            splitValues = resolution.Split(resolutionSplitChar);
+
+            Screen.SetResolution(int.Parse(splitValues[0]), int.Parse(splitValues[1]), (FullScreenMode)_graphicsModel.windowMode);
         }
     }
 }
