@@ -6,20 +6,22 @@ namespace RMS
     [Serializable]
     public class AudioModel
     {
-        public float audioVolume { get; set; }
+        public float masterVolume { get; set; }
+        public float effectVolume { get; set; }
         public float musicVolume { get; set; }
         public int outputDevice { get; set; }
 
         public AudioModel()
         {
-            audioVolume = 1.0f;
+            masterVolume = 1.0f;
+            effectVolume = 1.0f;
             musicVolume = 1.0f;
             outputDevice = 0;
         }
 
         public void Log()
         {
-            Debug.Log($"AudioModel -> AudioVolume[{audioVolume}], MusicVolume[{musicVolume}], OutputDevice[{outputDevice}]");
+            Debug.Log($"AudioModel -> MasterVolume[{masterVolume}], AudioVolume[{effectVolume}], MusicVolume[{musicVolume}], OutputDevice[{outputDevice}]");
         }
     }
 }
