@@ -8,7 +8,7 @@ namespace RMS
     {
         public void Log()
         {
-            Debug.Log("");
+            Debug.Log("Acessibility Model");
         }
     }
 }

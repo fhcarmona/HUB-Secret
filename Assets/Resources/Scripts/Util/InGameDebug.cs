@@ -1,3 +1,4 @@
+using RMS;
 using RMS.Player;
 using System.Collections;
 using System.Collections.Generic;
@@ -36,11 +37,20 @@ public class InGameDebug : MonoBehaviour
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
             inventoryItems[0].SetActive(true);
+            DataPersistenceSystem.playerModel.inventory.hasClipboard = true;
+        }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
             inventoryItems[1].SetActive(true);
+            DataPersistenceSystem.playerModel.inventory.hasKeyCard = true;
+        }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
             inventoryItems[2].SetActive(true);
+            DataPersistenceSystem.playerModel.inventory.hasRadio = true;
+        }
     }
 
     public void ChangeDoorStatus()
