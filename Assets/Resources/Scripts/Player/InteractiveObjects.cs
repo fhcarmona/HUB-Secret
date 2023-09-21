@@ -20,7 +20,7 @@ namespace RMS.Player
         }
 
         public void Update()
-        {
+        {            
             isRaycastHitting = GetRaycastObject(out hit);
 
             SetRaycastDescription();

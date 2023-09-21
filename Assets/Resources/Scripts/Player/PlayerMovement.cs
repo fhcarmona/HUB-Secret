@@ -23,6 +23,8 @@ public class PlayerMovement : MonoBehaviour
     const float minViewAngle = -60.0f;
     const float maxViewAngle = 45.0f;
 
+    private bool canMove = true;
+
     private void Start()
     {
         playerCamera = transform.GetComponentInChildren<Camera>();
@@ -31,14 +33,22 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        MovePlayer();        
-        
+        if (Input.GetKeyDown(KeyCode.RightShift))
+            canMove = !canMove;
+
+        if (canMove)
+        {
+            MovePlayer();
+        }
     }
 
     private void LateUpdate()
     {
-        MouseLook();
-        CheckOutboundPos();
+        if (canMove)
+        {
+            MouseLook();
+            CheckOutboundPos();
+        }
     }
 
     /// <summary>
