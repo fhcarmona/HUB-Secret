@@ -1,9 +1,119 @@
 fileFormatVersion: 2
-guid: 97b2a23e7be460c47937d55df1989b71
+guid: 19a1b57907858c3499423a62c600bf30
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: C_OfficeCeilling001
+    second: {fileID: 2100000, guid: 69919c2c8cf38484cb2f3c4c14f7d241, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: C_PaintedPlaster017
+    second: {fileID: 2100000, guid: ff32c8a86ae92894da258992ac4051b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: D_Metal009
+    second: {fileID: 2100000, guid: dc4474ebb30db0f49ba216da0712f182, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: D_Metal036
+    second: {fileID: 2100000, guid: 869642ff07680c74c8298749753b2eb3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: D_MetalWalkway010
+    second: {fileID: 2100000, guid: fb04fba9850b78645935796d2eae722c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: D_Wood028
+    second: {fileID: 2100000, guid: 99d75d7e641997248b8e29c186e74ca7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: D_Wood061
+    second: {fileID: 2100000, guid: 5d70127a493aaac4884566bd43c79525, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: F_Carpet
+    second: {fileID: 2100000, guid: 12321e811932ce74c943031c7ff60f5f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: F_Concrete
+    second: {fileID: 2100000, guid: 04f9032f6a37bd649844b74fda644433, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: F_DiamondPlate
+    second: {fileID: 2100000, guid: 9c60c3b957d75444aa92f0e47a4b9ed0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: F_Fliperama
+    second: {fileID: 2100000, guid: 6dec33f3f4dfd9d4786639b513b65f15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: F_Terrazzo
+    second: {fileID: 2100000, guid: e98506e72297b8c4ea757a084a71db67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: F_TerrazzoVenetianPolished001
+    second: {fileID: 2100000, guid: 27bbf14cc40a1b245a595f59738d9961, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: F_TerrazzoVenetianPolished003
+    second: {fileID: 2100000, guid: b047cd848a6ed33408bd732e99855f2b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: F_Toilet
+    second: {fileID: 2100000, guid: 496fbb427cb3af240b6c313c95f441ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: F_Wood
+    second: {fileID: 2100000, guid: f1a476b8ea035834bb4736e0bb2f215c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass
+    second: {fileID: 2100000, guid: 141b46399cf7e134aa635a51d5d31b64, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: O_Metal014
+    second: {fileID: 2100000, guid: d2b6d297601b2064187e4bf9ef47ca8a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: O_Pipe003
+    second: {fileID: 2100000, guid: 6ab73b0d93b5f51479784582fb2d3b87, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: O_Plastic006
+    second: {fileID: 2100000, guid: 40b22874866992a47a9832325acf379f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: W_Plaster001
+    second: {fileID: 2100000, guid: f2d7a661c0848324aa454289d774d621, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: W_Plaster004
+    second: {fileID: 2100000, guid: 9a0be3cd6d8411f45aab213a3007eb98, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -48,7 +158,7 @@ ModelImporter:
     nodeNameCollisionStrategy: 1
     fileIdsGeneration: 2
     swapUVChannels: 0
-    generateSecondaryUV: 1
+    generateSecondaryUV: 0
     useFileUnits: 1
     keepQuads: 0
     weldVertices: 1
@@ -71,7 +181,7 @@ ModelImporter:
     strictVertexDataChecks: 0
   tangentSpace:
     normalSmoothAngle: 60
-    normalImportMode: 1
+    normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
