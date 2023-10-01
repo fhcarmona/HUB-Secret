@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace RMS
 {
-    public class DataPersistenceSystem
+    public class DataPersistenceSystem : MonoBehaviour
     {
         private const string ConfigurationFilePath = "/Configuration.dat";
         private const string PlayerFilePath = "/Player.dat";

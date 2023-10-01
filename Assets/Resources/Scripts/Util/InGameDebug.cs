@@ -7,7 +7,6 @@ using UnityEngine;
 public class InGameDebug : MonoBehaviour
 {
     public GameObject[] inventoryItems;
-    public GameObject lantern;
 
     private new GameObject camera;
     private InteractiveObjects interactiveClass;
@@ -24,7 +23,6 @@ public class InGameDebug : MonoBehaviour
     {
         InventoryChanger();
         ChangeDoorStatus();
-        TurnLanternOn();
     }
 
     public void InventoryChanger()
@@ -59,15 +57,12 @@ public class InGameDebug : MonoBehaviour
         {
             interactiveClass.GetRaycastObject(out RaycastHit hit);
 
-            hit.transform.gameObject.SetActive(false);
+            if (hit.transform != null)
+            {
+                hit.transform.gameObject.SetActive(false);
 
-            Debug.Log($"Objeto {hit.transform.name} desabilitado");
+                Debug.Log($"Objeto {hit.transform.name} desabilitado");
+            }
         }
-    }
-
-    public void TurnLanternOn()
-    {
-        if(Input.GetKeyDown(KeyCode.F))
-            lantern.SetActive(!lantern.activeSelf);
     }
 }

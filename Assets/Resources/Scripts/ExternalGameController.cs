@@ -11,10 +11,7 @@ public class ExternalGameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
-        {
-            StartProgram("CLT");
-        }
+        
     }
 
     private void StartProgram(string programName)

@@ -1,0 +1,170 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &560966045866933618
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 63dbaf2fa8e03ae48bf865ae28033a74,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 63dbaf2fa8e03ae48bf865ae28033a74,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 63dbaf2fa8e03ae48bf865ae28033a74,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 63dbaf2fa8e03ae48bf865ae28033a74,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 63dbaf2fa8e03ae48bf865ae28033a74,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 63dbaf2fa8e03ae48bf865ae28033a74,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 63dbaf2fa8e03ae48bf865ae28033a74,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 63dbaf2fa8e03ae48bf865ae28033a74,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 63dbaf2fa8e03ae48bf865ae28033a74,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 63dbaf2fa8e03ae48bf865ae28033a74,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6740445381909673646, guid: 63dbaf2fa8e03ae48bf865ae28033a74,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -6740445381909673646, guid: 63dbaf2fa8e03ae48bf865ae28033a74,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -6740445381909673646, guid: 63dbaf2fa8e03ae48bf865ae28033a74,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -6740445381909673646, guid: 63dbaf2fa8e03ae48bf865ae28033a74,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: -6090299892518692230, guid: 63dbaf2fa8e03ae48bf865ae28033a74,
+        type: 3}
+      propertyPath: m_Name
+      value: Cardboard
+      objectReference: {fileID: 0}
+    - target: {fileID: -854381614240336836, guid: 63dbaf2fa8e03ae48bf865ae28033a74,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -854381614240336836, guid: 63dbaf2fa8e03ae48bf865ae28033a74,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: -854381614240336836, guid: 63dbaf2fa8e03ae48bf865ae28033a74,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -854381614240336836, guid: 63dbaf2fa8e03ae48bf865ae28033a74,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 63dbaf2fa8e03ae48bf865ae28033a74,
+        type: 3}
+      propertyPath: m_Name
+      value: TicketRoll
+      objectReference: {fileID: 0}
+    - target: {fileID: 3421501889620689702, guid: 63dbaf2fa8e03ae48bf865ae28033a74,
+        type: 3}
+      propertyPath: m_Name
+      value: Tickets
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects:
+    - {fileID: 65702495048144492, guid: 63dbaf2fa8e03ae48bf865ae28033a74, type: 3}
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3421501889620689702, guid: 63dbaf2fa8e03ae48bf865ae28033a74,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4208255827309546219}
+    - targetCorrespondingSourceObject: {fileID: 3421501889620689702, guid: 63dbaf2fa8e03ae48bf865ae28033a74,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6962858315908292801}
+  m_SourcePrefab: {fileID: 100100000, guid: 63dbaf2fa8e03ae48bf865ae28033a74, type: 3}
+--- !u!1 &2932809221472747092 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3421501889620689702, guid: 63dbaf2fa8e03ae48bf865ae28033a74,
+    type: 3}
+  m_PrefabInstance: {fileID: 560966045866933618}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &4208255827309546219
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2932809221472747092}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.0018000002, y: 0.0023644692, z: 0.00025500005}
+  m_Center: {x: 0, y: -0.00028223434, z: 0}
+--- !u!114 &6962858315908292801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2932809221472747092}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ea8e651bc1812a42acbfc550fd0a4cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  title: Bunch of Tickets
+  description: Tickets that can be used to play a game in the fliperama machine.
