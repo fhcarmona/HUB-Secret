@@ -1,6 +1,5 @@
 using System;
 using UnityEngine;
-using static UnityEngine.Rendering.DebugUI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -11,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     
     private float lateralMovement = 0f;
     private float upDownMovement = 0f;
-    private float walkSpeed = 3.5f;
+    private float walkSpeed = defaultSpeed;
     private float xMouseSensibility = 1.5f;
     private float zMouseSensibility = 1.5f;
 
@@ -20,10 +19,16 @@ public class PlayerMovement : MonoBehaviour
     const string zKeyboardName = "Vertical";
     const string xMouseName = "Mouse X";
     const string yMouseName = "Mouse Y";
+    const float defaultSpeed = 5.0f;
     const float minViewAngle = -60.0f;
     const float maxViewAngle = 45.0f;
 
     private bool canMove = true;
+
+    public float DefaultSpeed
+    {
+        get { return defaultSpeed; }
+    }
 
     private void Start()
     {
@@ -82,5 +87,10 @@ public class PlayerMovement : MonoBehaviour
     {
         if (transform.position.y < -5)
             transform.position = spawnPos;
+    }
+
+    public void ChangeVelocity(float velocity)
+    {
+        walkSpeed = velocity;
     }
 }
