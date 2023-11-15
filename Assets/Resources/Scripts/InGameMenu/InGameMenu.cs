@@ -18,7 +18,7 @@ public class InGameMenu : MonoBehaviour
 
     public void Awake()
     {
-        playerManager = managers.GetComponent<PlayerManager>();
+        playerManager = managers.GetComponentInChildren<PlayerManager>();
     }
 
     public void Update()

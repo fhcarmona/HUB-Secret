@@ -1,17 +1,16 @@
+using FMOD.Studio;
 using RMS;
 using UnityEngine;
 
 public class MallManager : MonoBehaviour
 {
-    private PlayerManager playerManager;
-
-    public void Awake()
-    {
-        playerManager = GetComponent<PlayerManager>();
-    }
+    public PlayerManager playerManager;
+    private EventInstance cityBackgroundSound;
 
     public void Start()
     {
+        cityBackgroundSound = AudioManager.instance.CreateEventInstance(FMODEvents.instance.cityBackgroundAmbience);
+        cityBackgroundSound.start();
         DataPersistenceSystem.LoadGame();
         SetLoadedPlayerData();
     }

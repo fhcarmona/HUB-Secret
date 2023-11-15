@@ -20,6 +20,7 @@ namespace RMS
 
         public void OnClickNewGame()
         {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.clickUI, default);
             ClearWindows();
             newGame.SetActive(!newGame.activeSelf);
 
@@ -32,17 +33,20 @@ namespace RMS
 
         public void OnClickLoadGame()
         {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.clickUI, default);
             LoadingPersistence.LoadScene(newGameSceneName);
         }
 
         public void OnClickOptions()
         {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.clickUI, default);
             ClearWindows();
             options.SetActive(!options.activeSelf);
         }        
         
         public void OnClickQuit()
         {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.clickUI, default);
             ClearWindows();
             quit.SetActive(!quit.activeSelf);
         }
