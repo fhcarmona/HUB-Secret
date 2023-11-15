@@ -1,18 +1,22 @@
-using System;
 using UnityEngine;
+using FMOD.Studio;
+using RMS;
 
 public class PlayerMovement : MonoBehaviour
 {
-    // Private
+     // Private
     private Vector3 spawnPos;
     private Vector3 playerNewPos = Vector3.zero;
     private Camera playerCamera;
-    
+
+    private EventInstance playerFootsteps;
+
     private float lateralMovement = 0f;
     private float upDownMovement = 0f;
     private float walkSpeed = defaultSpeed;
     private float xMouseSensibility = 1.5f;
     private float zMouseSensibility = 1.5f;
+    private bool isMoving = false;
 
     // Constant
     const string xKeyboardName = "Horizontal";
@@ -23,37 +27,39 @@ public class PlayerMovement : MonoBehaviour
     const float minViewAngle = -60.0f;
     const float maxViewAngle = 45.0f;
 
-    private bool canMove = true;
-
     public float DefaultSpeed
     {
         get { return defaultSpeed; }
+    }
+
+    public bool IsMoving
+    {
+        get { return isMoving; }
+    }
+
+    public EventInstance PlayerFootsteps
+    {
+        get { return playerFootsteps; }
+        set { playerFootsteps = value; }
     }
 
     private void Start()
     {
         playerCamera = transform.GetComponentInChildren<Camera>();
         spawnPos = transform.position;
+        playerFootsteps = AudioManager.instance.CreateEventInstance(FMODEvents.instance.walkingPlayer);
     }
 
     private void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.RightShift))
-            canMove = !canMove;
-
-        if (canMove)
-        {
-            MovePlayer();
-        }
+        PlayerIsMoving();
+        MovePlayer();
+        UpdateSound();
     }
 
     private void LateUpdate()
     {
-        if (canMove)
-        {
-            MouseLook();
-            CheckOutboundPos();
-        }
+        MouseLook();
     }
 
     /// <summary>
@@ -61,10 +67,15 @@ public class PlayerMovement : MonoBehaviour
     /// </summary>
     private void MovePlayer()
     {
-        playerNewPos.x = Input.GetAxis(xKeyboardName) * walkSpeed;
-        playerNewPos.z = Input.GetAxis(zKeyboardName) * walkSpeed;
+        if (isMoving)
+        {
+            playerNewPos.x = Input.GetAxis(xKeyboardName) * walkSpeed;
+            playerNewPos.z = Input.GetAxis(zKeyboardName) * walkSpeed;
 
-        transform.Translate(playerNewPos * Time.deltaTime);
+            transform.Translate(playerNewPos * Time.deltaTime);
+
+            CheckOutboundPos();
+        }
     }
 
     /// <summary>
@@ -89,8 +100,31 @@ public class PlayerMovement : MonoBehaviour
             transform.position = spawnPos;
     }
 
+    public void PlayerIsMoving()
+    {
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+            isMoving = true;
+        else
+            isMoving = false;
+    }
+
     public void ChangeVelocity(float velocity)
     {
         walkSpeed = velocity;
+    }
+
+    public void UpdateSound()
+    {
+        if (isMoving)
+        {
+            playerFootsteps.getPlaybackState(out PLAYBACK_STATE playerbackState);
+
+            if (playerbackState.Equals(PLAYBACK_STATE.STOPPED))
+                playerFootsteps.start();
+        }
+        else
+        {
+            playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
+        }
     }
 }

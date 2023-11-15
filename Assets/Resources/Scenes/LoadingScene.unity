@@ -850,7 +850,7 @@ MonoBehaviour:
   loadingProgress: {fileID: 839878017}
   loadingImage: {fileID: 1208514776}
   modelList:
-  - model: {fileID: 919132149155446097, guid: a556b4dde58116b468609cbc29119b5a, type: 3}
+  - model: {fileID: 919132149155446097, guid: 5e34b7d5a0326504cb594834c2398a3b, type: 3}
     scale: {x: 100, y: 100, z: 100}
     title: Fliperama
     description: "Muito utilizado no inicio da explos\xE3o dos arcades, hoje \xE9

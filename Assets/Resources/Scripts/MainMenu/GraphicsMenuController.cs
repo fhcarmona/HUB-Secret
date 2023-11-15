@@ -54,6 +54,8 @@ namespace RMS
 
         public void OnClickSave()
         {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.clickUI, default);
+
             if (_graphicsModel != null)
             {
                 DataPersistenceSystem.configurationModel.graphicsModel = _graphicsModel;
@@ -66,6 +68,8 @@ namespace RMS
 
         public void OnClickCancel()
         {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.clickUI, default);
+
             SetConfigurationData();
         }
 

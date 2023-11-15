@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Linq;
 using UnityEngine;
 
 namespace RMS
@@ -8,10 +10,13 @@ namespace RMS
         public GameObject graphicsOptions;
         public GameObject audioOptions;
         public GameObject controllerOptions;
-        public GameObject accessibilityOptions;       
+        public GameObject accessibilityOptions;
+
+        public GameObject notImplementedWindow;
 
         public void OnClickGraphics()
         {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.clickUI, default);
             DeactivateOptions(graphicsOptions);
 
             graphicsOptions.SetActive(true);
@@ -19,6 +24,7 @@ namespace RMS
 
         public void OnClickAudio()
         {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.clickUI, default);
             DeactivateOptions(audioOptions);
 
             audioOptions.SetActive(true);
@@ -26,17 +32,14 @@ namespace RMS
 
         public void OnClickController()
         {
-            DeactivateOptions(controllerOptions);
-
-            controllerOptions.SetActive(true);
+            StartCoroutine(NotImplementedInfo());
         }
 
         public void OnClickAccessibility()
         {
-            DeactivateOptions(accessibilityOptions);
-
-            accessibilityOptions.SetActive(true);
+            StartCoroutine(NotImplementedInfo());
         }
+
         private void DeactivateOptions(GameObject activeOption)
         {
             if (graphicsOptions.name != activeOption.name)
@@ -50,6 +53,15 @@ namespace RMS
 
             if (accessibilityOptions.name != activeOption.name)
                 accessibilityOptions.SetActive(false);
+        }
+
+        IEnumerator NotImplementedInfo()
+        {
+            notImplementedWindow.SetActive(true);
+
+            yield return new WaitForSeconds(1);
+
+            notImplementedWindow.SetActive(false);
         }
     }
 }
