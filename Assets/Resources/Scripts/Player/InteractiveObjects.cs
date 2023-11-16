@@ -1,4 +1,5 @@
 using RMS.Controller;
+using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
@@ -7,6 +8,7 @@ namespace RMS.Player
     public class InteractiveObjects : MonoBehaviour
     {
         public GameObject hitPopup;
+        public GameObject keyCard;
 
         private TextMeshProUGUI[] popupTMP;
         private bool isRaycastHitting;
@@ -38,6 +40,16 @@ namespace RMS.Player
 
                     popupTMP[0].text = popup.title;
                     popupTMP[1].text = popup.description;
+                }
+                else if (hit.transform.TryGetComponent(out SecurityRoutineQuest securityQuest))
+                {
+                    if (Input.GetKeyDown(KeyCode.E) && keyCard.activeSelf)
+                    {
+                        securityQuest.OnPressRoutineButton();
+
+                        foreach (Light light in hit.transform.GetComponentsInChildren<Light>())
+                            light.color = new Color(0, 0.5f, 0);
+                    }
                 }
             }
             else

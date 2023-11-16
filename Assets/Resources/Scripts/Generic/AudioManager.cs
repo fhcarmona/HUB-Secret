@@ -18,7 +18,7 @@ namespace RMS
             eventInstances = new List<EventInstance>();
         }
 
-        private void CleanUp()
+        public void CleanUp()
         {
             foreach (EventInstance instance in eventInstances)
             {

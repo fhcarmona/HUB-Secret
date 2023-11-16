@@ -11,6 +11,9 @@ public class DoorController : MonoBehaviour
 
     public void ChangeDoorAnimation()
     {
+        if (gameObject.name == "Door.040" && !QuestModel.route[0])
+            return;
+
         if (TryGetComponent(out Animator animator))
         {
             bool isOpen = !animator.GetBool(isDoorOpenName);
