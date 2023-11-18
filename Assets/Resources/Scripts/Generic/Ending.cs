@@ -10,7 +10,9 @@ public class Ending : MonoBehaviour
 
     public void OnTriggerEnter()
     {
-        if (QuestModel.route[0] && QuestModel.route[1] && QuestModel.route[2] && QuestModel.route[3] && QuestModel.route[4] && QuestModel.route[5])
+        bool[] route = DataPersistenceSystem.playerModel.quest.route;
+
+        if (route[0] && route[1] && route[2] && route[3] && route[4] && route[5])
             StartCoroutine(DemoComplete());
     }
 

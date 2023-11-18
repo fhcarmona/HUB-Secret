@@ -1,7 +1,7 @@
 using System;
 
 [Serializable]
-public class QuestModel
+public struct QuestModel
 {
-    public static bool[] route = new bool[6];
+    public bool[] route;
 }

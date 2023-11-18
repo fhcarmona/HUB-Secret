@@ -27,26 +27,25 @@ public class InGameDebug : MonoBehaviour
 
     public void InventoryChanger()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1) || Input.GetKeyDown(KeyCode.Alpha2) || Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            inventoryItems[0].SetActive(false);
-            inventoryItems[1].SetActive(false);
-            inventoryItems[2].SetActive(false);
-        }
-
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            inventoryItems[0].SetActive(true);
+            inventoryItems[1].SetActive(false);
+            inventoryItems[2].SetActive(false);
+            inventoryItems[0].SetActive(!inventoryItems[0].activeSelf);
             DataPersistenceSystem.playerModel.inventory.hasClipboard = true;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            inventoryItems[1].SetActive(true);
+            inventoryItems[0].SetActive(false);
+            inventoryItems[2].SetActive(false);
+            inventoryItems[1].SetActive(!inventoryItems[1].activeSelf);
             DataPersistenceSystem.playerModel.inventory.hasKeyCard = true;
         }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            inventoryItems[2].SetActive(true);
+            inventoryItems[0].SetActive(false);
+            inventoryItems[1].SetActive(false);
+            inventoryItems[2].SetActive(!inventoryItems[2].activeSelf);
             DataPersistenceSystem.playerModel.inventory.hasRadio = true;
         }
     }

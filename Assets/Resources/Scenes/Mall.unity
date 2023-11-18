@@ -1959,7 +1959,7 @@ GameObject:
   - component: {fileID: 508823375}
   - component: {fileID: 508823374}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: DemoControlInfo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3383,6 +3383,7 @@ RectTransform:
   - {fileID: 1184103982}
   - {fileID: 508823373}
   - {fileID: 1835028244}
+  - {fileID: 1715935703}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -6661,6 +6662,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 3
+  isAutomatic: 0
 --- !u!1001 &1342018070
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7580,6 +7582,78 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8ce9c0e41e84ae04794f2400995a4e41, type: 3}
+--- !u!1 &1715935702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1715935703}
+  - component: {fileID: 1715935705}
+  - component: {fileID: 1715935704}
+  m_Layer: 5
+  m_Name: RawImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1715935703
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715935702}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 750955605}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 5, y: 3}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1715935704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715935702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.39215687}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Texture: {fileID: 0}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!222 &1715935705
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1715935702}
+  m_CullTransparentMesh: 1
 --- !u!1001 &1720364990
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9296,7 +9370,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 960, y: 540}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1920, y: 1080}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &1805520255 stripped
@@ -12161,6 +12235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
+  isAutomatic: 0
 --- !u!33 &55057073026223399
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14036,6 +14111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!65 &229496235366531104
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14379,6 +14455,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!1 &253634360299865377
 GameObject:
   m_ObjectHideFlags: 0
@@ -15270,6 +15347,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
+  isAutomatic: 0
 --- !u!23 &343154614846023599
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19791,6 +19869,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
+  isAutomatic: 0
 --- !u!1 &735059413137266850
 GameObject:
   m_ObjectHideFlags: 0
@@ -20967,6 +21046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!4 &836389312920106663
 Transform:
   m_ObjectHideFlags: 0
@@ -21139,6 +21219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!65 &843140247778120795
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21199,6 +21280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!23 &846235131572417571
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22606,6 +22688,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
+  isAutomatic: 0
 --- !u!23 &952676730430552807
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24364,6 +24447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
+  isAutomatic: 0
 --- !u!1 &1097760460657129903
 GameObject:
   m_ObjectHideFlags: 0
@@ -24540,6 +24624,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!23 &1120301346485720946
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24634,6 +24719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
+  isAutomatic: 0
 --- !u!1 &1137411904517837807
 GameObject:
   m_ObjectHideFlags: 0
@@ -27707,6 +27793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!4 &1456725726771118816
 Transform:
   m_ObjectHideFlags: 0
@@ -29882,6 +29969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
+  isAutomatic: 0
 --- !u!4 &1658648719567323757
 Transform:
   m_ObjectHideFlags: 0
@@ -31538,6 +31626,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!65 &1812454300182604319
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -32163,7 +32252,7 @@ Transform:
   m_GameObject: {fileID: 2792667800015301670}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 12.8790865, y: 1.5736424, z: 12.6971655}
+  m_LocalPosition: {x: 12.8790865, y: 1.6, z: 12.6971655}
   m_LocalScale: {x: 100, y: 99.999985, z: 99.999985}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33084,6 +33173,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
+  isAutomatic: 0
 --- !u!1 &1958267989237228653
 GameObject:
   m_ObjectHideFlags: 0
@@ -33957,6 +34047,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!4 &2027131735177639530
 Transform:
   m_ObjectHideFlags: 0
@@ -35072,6 +35163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
+  isAutomatic: 0
 --- !u!1 &2117552338567073777
 GameObject:
   m_ObjectHideFlags: 0
@@ -36701,6 +36793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
+  isAutomatic: 0
 --- !u!1 &2253782169528763986
 GameObject:
   m_ObjectHideFlags: 0
@@ -41059,6 +41152,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!4 &2645701220072791278
 Transform:
   m_ObjectHideFlags: 0
@@ -42985,6 +43079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!65 &2815495536509177665
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43387,6 +43482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
+  isAutomatic: 0
 --- !u!23 &2853061778454291944
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44308,6 +44404,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!23 &2927166194290721248
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47361,6 +47458,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!23 &3227223151017019124
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49844,6 +49942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
+  isAutomatic: 0
 --- !u!1 &3448921564189406399
 GameObject:
   m_ObjectHideFlags: 0
@@ -50368,6 +50467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!23 &3509608425228582705
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -50593,6 +50693,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 2
+  isAutomatic: 0
 --- !u!1 &3532406981140766081
 GameObject:
   m_ObjectHideFlags: 0
@@ -50668,6 +50769,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!23 &3542655854542328931
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -53431,6 +53533,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
+  isAutomatic: 0
 --- !u!4 &3836712867557961672
 Transform:
   m_ObjectHideFlags: 0
@@ -55719,6 +55822,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!4 &4039938501828951439
 Transform:
   m_ObjectHideFlags: 0
@@ -55942,6 +56046,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!33 &4068154685784922065
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -58650,6 +58755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!33 &4326052549071857858
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -60156,6 +60262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
+  isAutomatic: 0
 --- !u!1 &4446805273310986158
 GameObject:
   m_ObjectHideFlags: 0
@@ -61095,6 +61202,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!23 &4535654177143745940
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -61344,6 +61452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
+  isAutomatic: 0
 --- !u!4 &4563692106273195453
 Transform:
   m_ObjectHideFlags: 0
@@ -61702,6 +61811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!23 &4594016996717131192
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -63811,6 +63921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!65 &4785284219224775129
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -70503,6 +70614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
+  isAutomatic: 0
 --- !u!23 &5470086931286527058
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -75582,6 +75694,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!23 &5911619578069561646
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -78739,6 +78852,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
+  isAutomatic: 0
 --- !u!1 &6214311177467575582
 GameObject:
   m_ObjectHideFlags: 0
@@ -80353,6 +80467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!33 &6341580851705657509
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -83635,6 +83750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
+  isAutomatic: 0
 --- !u!23 &6614739735874686864
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -88149,6 +88265,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!4 &7069946292118255508
 Transform:
   m_ObjectHideFlags: 0
@@ -90186,6 +90303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
+  isAutomatic: 0
 --- !u!33 &7216081012918430171
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -92322,6 +92440,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
+  isAutomatic: 0
 --- !u!33 &7414421410225374144
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -93089,6 +93208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!114 &7495235546232540727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93102,6 +93222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!33 &7497781422385476653
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -93360,6 +93481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!4 &7515206979550405740
 Transform:
   m_ObjectHideFlags: 0
@@ -94456,6 +94578,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 2
+  isAutomatic: 1
 --- !u!114 &7613172600137775695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94469,6 +94592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
+  isAutomatic: 0
 --- !u!1 &7614461474368105939
 GameObject:
   m_ObjectHideFlags: 0
@@ -94797,6 +94921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!23 &7656007546446187081
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -96116,6 +96241,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!4 &7765791178041448161
 Transform:
   m_ObjectHideFlags: 0
@@ -97025,6 +97151,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
+  isAutomatic: 0
 --- !u!1 &7833403061354750612
 GameObject:
   m_ObjectHideFlags: 0
@@ -98261,6 +98388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!1 &7973983228641040699
 GameObject:
   m_ObjectHideFlags: 0
@@ -98500,6 +98628,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
+  isAutomatic: 0
 --- !u!4 &7990637012541913983
 Transform:
   m_ObjectHideFlags: 0
@@ -100925,6 +101054,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!33 &8165964354555643049
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -101582,6 +101712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!33 &8217001623893242849
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -102976,6 +103107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!4 &8334659972200105892
 Transform:
   m_ObjectHideFlags: 0
@@ -103927,6 +104059,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!1 &8438722814423586126
 GameObject:
   m_ObjectHideFlags: 0
@@ -104258,6 +104391,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!33 &8472710812251202223
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -107255,6 +107389,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 0
+  isAutomatic: 0
 --- !u!1 &8737534253657481241
 GameObject:
   m_ObjectHideFlags: 0
@@ -108851,6 +108986,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorType: 1
+  isAutomatic: 0
 --- !u!1 &8908768917627103086
 GameObject:
   m_ObjectHideFlags: 0

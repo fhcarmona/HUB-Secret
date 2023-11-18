@@ -30,6 +30,8 @@ public class InGameMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.P))
         {
+            Cursor.visible = true;
+
             menuOptions.gameObject.SetActive(!menuOptions.gameObject.activeSelf);
             inventory.gameObject.SetActive(!inventory.gameObject.activeSelf);
 
@@ -66,6 +68,8 @@ public class InGameMenu : MonoBehaviour
 
     public void OnClickQuitGame()
     {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
         Application.Quit();
     }
 
