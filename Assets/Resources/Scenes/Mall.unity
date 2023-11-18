@@ -353,6 +353,13 @@ MonoBehaviour:
       Data3: 978014386
       Data4: -1941072037
     Path: event:/Door/Metal
+  <metalDoorLocked>k__BackingField:
+    Guid:
+      Data1: 755509026
+      Data2: 1253717949
+      Data3: 160080559
+      Data4: 813069427
+    Path: event:/Door/MetalLocked
   <steelDoor>k__BackingField:
     Guid:
       Data1: -1524449723
@@ -6663,6 +6670,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 3
   isAutomatic: 0
+  isLocked: 0
 --- !u!1001 &1342018070
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12236,6 +12244,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 1
   isAutomatic: 0
+  isLocked: 0
 --- !u!33 &55057073026223399
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -14110,8 +14119,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!65 &229496235366531104
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14456,6 +14466,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 0
   isAutomatic: 0
+  isLocked: 0
 --- !u!1 &253634360299865377
 GameObject:
   m_ObjectHideFlags: 0
@@ -15348,6 +15359,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 1
   isAutomatic: 0
+  isLocked: 0
 --- !u!23 &343154614846023599
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -19870,6 +19882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 1
   isAutomatic: 0
+  isLocked: 0
 --- !u!1 &735059413137266850
 GameObject:
   m_ObjectHideFlags: 0
@@ -21047,6 +21060,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 0
   isAutomatic: 0
+  isLocked: 0
 --- !u!4 &836389312920106663
 Transform:
   m_ObjectHideFlags: 0
@@ -21218,8 +21232,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!65 &843140247778120795
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21279,8 +21294,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!23 &846235131572417571
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22689,6 +22705,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 1
   isAutomatic: 0
+  isLocked: 0
 --- !u!23 &952676730430552807
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24448,6 +24465,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 1
   isAutomatic: 0
+  isLocked: 0
 --- !u!1 &1097760460657129903
 GameObject:
   m_ObjectHideFlags: 0
@@ -24623,8 +24641,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!23 &1120301346485720946
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -24720,6 +24739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 1
   isAutomatic: 0
+  isLocked: 0
 --- !u!1 &1137411904517837807
 GameObject:
   m_ObjectHideFlags: 0
@@ -27792,8 +27812,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!4 &1456725726771118816
 Transform:
   m_ObjectHideFlags: 0
@@ -29970,6 +29991,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 1
   isAutomatic: 0
+  isLocked: 0
 --- !u!4 &1658648719567323757
 Transform:
   m_ObjectHideFlags: 0
@@ -31627,6 +31649,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 0
   isAutomatic: 0
+  isLocked: 0
 --- !u!65 &1812454300182604319
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33174,6 +33197,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 1
   isAutomatic: 0
+  isLocked: 0
 --- !u!1 &1958267989237228653
 GameObject:
   m_ObjectHideFlags: 0
@@ -34048,6 +34072,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 0
   isAutomatic: 0
+  isLocked: 0
 --- !u!4 &2027131735177639530
 Transform:
   m_ObjectHideFlags: 0
@@ -35164,6 +35189,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 1
   isAutomatic: 0
+  isLocked: 0
 --- !u!1 &2117552338567073777
 GameObject:
   m_ObjectHideFlags: 0
@@ -36794,6 +36820,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 1
   isAutomatic: 0
+  isLocked: 0
 --- !u!1 &2253782169528763986
 GameObject:
   m_ObjectHideFlags: 0
@@ -41151,8 +41178,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!4 &2645701220072791278
 Transform:
   m_ObjectHideFlags: 0
@@ -43078,8 +43106,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!65 &2815495536509177665
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -43483,6 +43512,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 1
   isAutomatic: 0
+  isLocked: 0
 --- !u!23 &2853061778454291944
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -44403,8 +44433,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!23 &2927166194290721248
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -47457,8 +47488,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!23 &3227223151017019124
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -49943,6 +49975,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 1
   isAutomatic: 0
+  isLocked: 0
 --- !u!1 &3448921564189406399
 GameObject:
   m_ObjectHideFlags: 0
@@ -50466,8 +50499,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!23 &3509608425228582705
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -50694,6 +50728,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 2
   isAutomatic: 0
+  isLocked: 0
 --- !u!1 &3532406981140766081
 GameObject:
   m_ObjectHideFlags: 0
@@ -50768,8 +50803,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!23 &3542655854542328931
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -53534,6 +53570,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 1
   isAutomatic: 0
+  isLocked: 0
 --- !u!4 &3836712867557961672
 Transform:
   m_ObjectHideFlags: 0
@@ -55821,8 +55858,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!4 &4039938501828951439
 Transform:
   m_ObjectHideFlags: 0
@@ -56045,8 +56083,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!33 &4068154685784922065
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -58754,8 +58793,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!33 &4326052549071857858
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -60263,6 +60303,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 1
   isAutomatic: 0
+  isLocked: 0
 --- !u!1 &4446805273310986158
 GameObject:
   m_ObjectHideFlags: 0
@@ -61201,8 +61242,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!23 &4535654177143745940
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -61453,6 +61495,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 1
   isAutomatic: 0
+  isLocked: 0
 --- !u!4 &4563692106273195453
 Transform:
   m_ObjectHideFlags: 0
@@ -61810,8 +61853,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!23 &4594016996717131192
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -63922,6 +63966,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 0
   isAutomatic: 0
+  isLocked: 0
 --- !u!65 &4785284219224775129
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -70615,6 +70660,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 1
   isAutomatic: 0
+  isLocked: 0
 --- !u!23 &5470086931286527058
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -75695,6 +75741,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 0
   isAutomatic: 0
+  isLocked: 0
 --- !u!23 &5911619578069561646
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -78853,6 +78900,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 1
   isAutomatic: 0
+  isLocked: 0
 --- !u!1 &6214311177467575582
 GameObject:
   m_ObjectHideFlags: 0
@@ -80468,6 +80516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 0
   isAutomatic: 0
+  isLocked: 0
 --- !u!33 &6341580851705657509
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -83751,6 +83800,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 1
   isAutomatic: 0
+  isLocked: 0
 --- !u!23 &6614739735874686864
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -88264,8 +88314,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!4 &7069946292118255508
 Transform:
   m_ObjectHideFlags: 0
@@ -90304,6 +90355,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 1
   isAutomatic: 0
+  isLocked: 0
 --- !u!33 &7216081012918430171
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -92441,6 +92493,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 1
   isAutomatic: 0
+  isLocked: 0
 --- !u!33 &7414421410225374144
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -93207,8 +93260,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!114 &7495235546232540727
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93221,8 +93275,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!33 &7497781422385476653
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -93480,8 +93535,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!4 &7515206979550405740
 Transform:
   m_ObjectHideFlags: 0
@@ -94579,6 +94635,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 2
   isAutomatic: 1
+  isLocked: 0
 --- !u!114 &7613172600137775695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -94593,6 +94650,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 1
   isAutomatic: 0
+  isLocked: 0
 --- !u!1 &7614461474368105939
 GameObject:
   m_ObjectHideFlags: 0
@@ -94920,8 +94978,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!23 &7656007546446187081
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -96240,8 +96299,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!4 &7765791178041448161
 Transform:
   m_ObjectHideFlags: 0
@@ -97152,6 +97212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 1
   isAutomatic: 0
+  isLocked: 0
 --- !u!1 &7833403061354750612
 GameObject:
   m_ObjectHideFlags: 0
@@ -98387,8 +98448,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!1 &7973983228641040699
 GameObject:
   m_ObjectHideFlags: 0
@@ -98629,6 +98691,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 1
   isAutomatic: 0
+  isLocked: 0
 --- !u!4 &7990637012541913983
 Transform:
   m_ObjectHideFlags: 0
@@ -101055,6 +101118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 0
   isAutomatic: 0
+  isLocked: 0
 --- !u!33 &8165964354555643049
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -101711,8 +101775,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!33 &8217001623893242849
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -103106,8 +103171,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!4 &8334659972200105892
 Transform:
   m_ObjectHideFlags: 0
@@ -104058,8 +104124,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!1 &8438722814423586126
 GameObject:
   m_ObjectHideFlags: 0
@@ -104390,8 +104457,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!33 &8472710812251202223
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -107388,8 +107456,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4cf1de27c5a21340bdd1ce8334a44a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorType: 0
+  doorType: 3
   isAutomatic: 0
+  isLocked: 1
 --- !u!1 &8737534253657481241
 GameObject:
   m_ObjectHideFlags: 0
@@ -108987,6 +109056,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   doorType: 1
   isAutomatic: 0
+  isLocked: 0
 --- !u!1 &8908768917627103086
 GameObject:
   m_ObjectHideFlags: 0

@@ -32,6 +32,10 @@ public class SecurityRoutineQuest : MonoBehaviour
         {
             Debug.LogWarning($"[SecurityRoutineQuest] OnPressRoutineButton - index: {buttonIndex}");
         }
+        else if (route[buttonIndex])
+        {
+            return;
+        }
         else
         {
             route[buttonIndex] = true;
