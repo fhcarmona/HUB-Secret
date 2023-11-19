@@ -13,6 +13,7 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference commonDoor { get; private set; }
     [field: SerializeField] public EventReference glassDoor { get; private set; }
     [field: SerializeField] public EventReference metalDoor { get; private set; }
+    [field: SerializeField] public EventReference metalDoorLocked { get; private set; }
     [field: SerializeField] public EventReference steelDoor { get; private set; }
 
     [field: Header("Player")]

@@ -13,6 +13,8 @@ public class MallManager : MonoBehaviour
         cityBackgroundSound.start();
         DataPersistenceSystem.LoadGame();
         SetLoadedPlayerData();
+        Cursor.lockState = CursorLockMode.Confined;
+        Cursor.visible = false;
     }
 
     public void SetLoadedPlayerData()
