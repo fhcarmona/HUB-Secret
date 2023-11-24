@@ -28,7 +28,7 @@ public class InGameMenu : MonoBehaviour
 
     public void OpenInGameMenu()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             Cursor.visible = true;
 

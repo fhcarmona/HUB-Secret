@@ -17,36 +17,34 @@ public class InGameDebug : MonoBehaviour
 
         if (camera.TryGetComponent(out interactiveClass))
             Debug.Log("Classe encontrada");
+
+        DataPersistenceSystem.playerModel.inventory.hasClipboard = true;
     }
 
     void Update()
     {
         InventoryChanger();
-        ChangeDoorStatus();
     }
 
     public void InventoryChanger()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1) && DataPersistenceSystem.playerModel.inventory.hasClipboard)
         {
             inventoryItems[1].SetActive(false);
             inventoryItems[2].SetActive(false);
             inventoryItems[0].SetActive(!inventoryItems[0].activeSelf);
-            DataPersistenceSystem.playerModel.inventory.hasClipboard = true;
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        else if (Input.GetKeyDown(KeyCode.Alpha2) && DataPersistenceSystem.playerModel.inventory.hasKeyCard)
         {
             inventoryItems[0].SetActive(false);
             inventoryItems[2].SetActive(false);
             inventoryItems[1].SetActive(!inventoryItems[1].activeSelf);
-            DataPersistenceSystem.playerModel.inventory.hasKeyCard = true;
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        else if (Input.GetKeyDown(KeyCode.Alpha3) && DataPersistenceSystem.playerModel.inventory.hasRadio)
         {
             inventoryItems[0].SetActive(false);
             inventoryItems[1].SetActive(false);
             inventoryItems[2].SetActive(!inventoryItems[2].activeSelf);
-            DataPersistenceSystem.playerModel.inventory.hasRadio = true;
         }
     }
 

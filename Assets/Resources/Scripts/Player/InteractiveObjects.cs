@@ -41,7 +41,12 @@ namespace RMS.Player
                     popupTMP[0].text = popup.title;
                     popupTMP[1].text = popup.description;
                 }
-                else if (hit.transform.TryGetComponent(out SecurityRoutineQuest securityQuest))
+                else
+                {
+                    hitPopup.SetActive(false);
+                }
+
+                if (hit.transform.TryGetComponent(out SecurityRoutineQuest securityQuest))
                 {
                     if (Input.GetKeyDown(KeyCode.E) && keyCard.activeSelf)
                     {
@@ -65,7 +70,13 @@ namespace RMS.Player
                 if (isRaycastHitting)
                 {
                     if (hit.transform.TryGetComponent(out DoorController door))
+                    {
                         door.ChangeDoorAnimation();
+                    }
+                    else if (hit.transform.TryGetComponent(out ItemController item))
+                    {
+                        item.PickupItem();
+                    }
                 }
             }
         }
