@@ -6,6 +6,23 @@ namespace RMS.Controller
     {
         [Header("Item")]
         public string title;
+        [TextArea]
         public string description;
+
+        public void PickupItem()
+        {
+            Debug.Log($"{name}");
+
+            if (name.Equals("keycard"))
+            {
+                DataPersistenceSystem.playerModel.inventory.hasKeyCard = true;
+            }
+            else if (name.Equals("radio"))
+            {
+                DataPersistenceSystem.playerModel.inventory.hasRadio = true;
+            }
+
+            Destroy(gameObject);
+        }
     }
 }

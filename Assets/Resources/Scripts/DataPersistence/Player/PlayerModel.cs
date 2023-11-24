@@ -18,9 +18,9 @@ namespace RMS
 
         public PlayerModel()
         {
-            xPosition = 2.5f;
+            xPosition = -1f;
             yPosition = 4.5f;
-            zPosition = 11;
+            zPosition = 10;
             xRotation = 0;
             yRotation = 1;
             zRotation = 0;

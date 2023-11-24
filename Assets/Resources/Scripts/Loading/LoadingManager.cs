@@ -27,7 +27,7 @@ public class LoadingManager : MonoBehaviour
 
     private const float rotationSpeed = 0.125f;
     private const int timer = 5;
-    private const string loadingDoneText = "Press [SPACE] key to continue...";
+    private const string loadingDoneText = "Pressione [ESPAÇO] para continuar...";
 
     void Start()
     {
