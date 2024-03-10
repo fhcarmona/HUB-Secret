@@ -374,9 +374,15 @@ MonoBehaviour:
   Plugins: []
   MasterBanks:
   - Master
+  - Stella_Data/StreamingAssets/Master
+  - Stella_Data/StreamingAssets/Stella_Data/StreamingAssets/Master
   Banks:
   - Effect
   - Music
+  - Stella_Data/StreamingAssets/Effect
+  - Stella_Data/StreamingAssets/Music
+  - Stella_Data/StreamingAssets/Stella_Data/StreamingAssets/Effect
+  - Stella_Data/StreamingAssets/Stella_Data/StreamingAssets/Music
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
