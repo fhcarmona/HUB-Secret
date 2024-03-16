@@ -1,6 +1,7 @@
 using UnityEngine;
 using FMOD.Studio;
 using RMS;
+using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
