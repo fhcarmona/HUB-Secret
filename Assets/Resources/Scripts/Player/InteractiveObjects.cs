@@ -77,6 +77,10 @@ namespace RMS.Player
                     {
                         item.PickupItem();
                     }
+                    else if (hit.transform.TryGetComponent(out SecurityCameraSystem securityCamera))
+                    {
+                        securityCamera.ChangeCamera();
+                    }
                 }
             }
         }
