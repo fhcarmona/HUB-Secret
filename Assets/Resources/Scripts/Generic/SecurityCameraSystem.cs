@@ -7,6 +7,14 @@ public class SecurityCameraSystem : MonoBehaviour
     [SerializeField] private PlayerMovement playerMovement;
 
     private bool isPlayerLooking;
+    private Material originalMaterial;
+    private Renderer cameraRenderer;
+
+    public void Start()
+    {
+        cameraRenderer = GetComponent<Renderer>();
+        originalMaterial = cameraRenderer.material;
+    }
 
     public void Update()
     {
@@ -19,11 +27,14 @@ public class SecurityCameraSystem : MonoBehaviour
 
     private void ChangeToSecondaryCamera()
     {
-        primaryCamera.gameObject.SetActive(false);
-        secondaryCamera.gameObject.SetActive(true);
+        if (cameraRenderer.material == originalMaterial)
+        {
+            primaryCamera.gameObject.SetActive(false);
+            secondaryCamera.gameObject.SetActive(true);
 
-        isPlayerLooking = true;
-        playerMovement.gameObject.SetActive(false);
+            isPlayerLooking = true;
+            playerMovement.gameObject.SetActive(false);
+        }
     }
 
     private void ChangeToPrimaryCamera()

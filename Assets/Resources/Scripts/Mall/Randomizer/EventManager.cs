@@ -5,6 +5,7 @@ using UnityEngine;
 public class EventManager : MonoBehaviour
 {    
     [SerializeField] private GameObject[] eventsObject;
+    [SerializeField] private GameObject[] monitors;
 
     private int delay;
     private Event current;
@@ -34,7 +35,14 @@ public class EventManager : MonoBehaviour
                 current = Event.MOVEMENT;
                 break;
             case >= 62: // 62-79 : 18
-                current = Event.CAMERA;
+                int monitorRNG = Random.Range(0, monitors.Length);
+
+                if (monitors[monitorRNG].GetComponent<CameraEvent>() == null)
+                {
+                    current = Event.CAMERA;
+                    monitors[monitorRNG].AddComponent<CameraEvent>();
+                }
+
                 break;
             case >= 0:  // 0-61 : 62
                 current = Event.NONE;

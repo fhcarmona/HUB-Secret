@@ -530,6 +530,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ccb9e9aaaa8d634b895ccf5b68fbbce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <ufo>k__BackingField:
+    Guid:
+      Data1: 2099092732
+      Data2: 1207903915
+      Data3: 1184722054
+      Data4: 1347616801
+    Path: event:/Alien/UFO
+  <whiteNoise>k__BackingField:
+    Guid:
+      Data1: -1326688513
+      Data2: 1258655898
+      Data3: -440900210
+      Data4: -1449205666
+    Path: event:/Alien/WhiteNoise
+  <strangeLanguage>k__BackingField:
+    Guid:
+      Data1: 1180515671
+      Data2: 1143598443
+      Data3: -147189097
+      Data4: -982298656
+    Path: event:/Alien/StrangeLanguage
   <cityBackgroundAmbience>k__BackingField:
     Guid:
       Data1: 1464135629
@@ -5583,6 +5604,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventsObject:
   - {fileID: 3143903139200689490, guid: 181a3f4811e64204fa0f72c3978cff78, type: 3}
+  monitors:
+  - {fileID: 1771579650180170155}
+  - {fileID: 6221535663110642473}
+  - {fileID: 7868123112270522346}
+  - {fileID: 7522332933636097035}
 --- !u!1 &1005842936
 GameObject:
   m_ObjectHideFlags: 0
