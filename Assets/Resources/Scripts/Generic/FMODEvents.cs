@@ -5,6 +5,11 @@ using UnityEngine;
 
 public class FMODEvents : MonoBehaviour
 {
+    [field: Header("Alien")]
+    [field: SerializeField] public EventReference ufo { get; private set; }
+    [field: SerializeField] public EventReference whiteNoise { get; private set; }
+    [field: SerializeField] public EventReference strangeLanguage { get; private set; }
+
     [field: Header("Ambience")]
     [field: SerializeField] public EventReference cityBackgroundAmbience { get; private set; }
     [field: SerializeField] public EventReference buttonAmbience { get; private set; }
