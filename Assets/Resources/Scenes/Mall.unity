@@ -5604,6 +5604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   eventsObject:
   - {fileID: 3143903139200689490, guid: 181a3f4811e64204fa0f72c3978cff78, type: 3}
+  - {fileID: 4052806484263228315, guid: f707614a9e3811a4ab927904d51caea1, type: 3}
   monitors:
   - {fileID: 1771579650180170155}
   - {fileID: 6221535663110642473}

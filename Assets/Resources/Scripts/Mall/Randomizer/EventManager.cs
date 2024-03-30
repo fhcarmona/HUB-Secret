@@ -29,7 +29,11 @@ public class EventManager : MonoBehaviour
                 }
                 break;
             case >= 92: // 92-97 : 6
-                current = Event.SHADOW;
+                if (!current.Equals(Event.SHADOW))
+                {
+                    current = Event.SHADOW;
+                    Instantiate(eventsObject[1]);
+                }
                 break;
             case >= 80: // 80-91 : 12
                 current = Event.MOVEMENT;
