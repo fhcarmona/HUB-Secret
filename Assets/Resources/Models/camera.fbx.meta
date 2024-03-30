@@ -3,7 +3,57 @@ guid: aa29a0ded5a130a40be50f265ba8efe9
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: O_BlackScreen.001
+    second: {fileID: 2100000, guid: ecde5daed24d51b498d253dc2098a0c6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: O_BlackScreen.002
+    second: {fileID: 2100000, guid: 82a01879487fa454bb20ab03be8f14d8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: O_BlackScreen.003
+    second: {fileID: 2100000, guid: 7a8c7db37462844488a249d151a41b16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: O_BlackScreen.004
+    second: {fileID: 2100000, guid: 324689f39e4127440a7e11e1a062901b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: O_BlackScreen.005
+    second: {fileID: 2100000, guid: 16c628864dc6d76419c93b68a1ecdc67, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: O_LightGrey
+    second: {fileID: 2100000, guid: 78ba1bfc15353014e8080e2f72ecffd4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: O_LightGrey.001
+    second: {fileID: 2100000, guid: 57067d175ea0fd04ba6e8e809c8ae2db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: O_LightGrey.002
+    second: {fileID: 2100000, guid: 85f9acae7a6d2d04b878bfb45c02b015, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: O_LightGrey.003
+    second: {fileID: 2100000, guid: e512ab74f6b36254b8fd6e7a739b77ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: O_LightGrey.004
+    second: {fileID: 2100000, guid: 77d31aea59797664391b5ce88574dc60, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

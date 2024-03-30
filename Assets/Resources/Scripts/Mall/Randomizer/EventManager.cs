@@ -18,6 +18,7 @@ public class EventManager : MonoBehaviour
     public IEnumerator TimerEvent()
     {
         int chance = Random.Range(0, 100);
+        int monitorRNG = Random.Range(0, monitors.Length);
 
         switch (chance)
         {
@@ -36,10 +37,13 @@ public class EventManager : MonoBehaviour
                 }
                 break;
             case >= 80: // 80-91 : 12
-                current = Event.MOVEMENT;
+                if (monitors[monitorRNG].GetComponent<MovementEvent>() == null)
+                {
+                    current = Event.MOVEMENT;
+                    monitors[monitorRNG].AddComponent<MovementEvent>();
+                }
                 break;
             case >= 62: // 62-79 : 18
-                int monitorRNG = Random.Range(0, monitors.Length);
 
                 if (monitors[monitorRNG].GetComponent<CameraEvent>() == null)
                 {

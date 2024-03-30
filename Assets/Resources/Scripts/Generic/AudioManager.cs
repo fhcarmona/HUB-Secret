@@ -40,7 +40,9 @@ namespace RMS
         public EventInstance PlayOneShot(EventReference reference, Vector3 worldPosition, string parameterName, int parameterValue)
         {
             EventInstance instance = RuntimeManager.CreateInstance(reference);
-            instance.setParameterByName(parameterName, parameterValue);
+            
+            if(parameterName != null)
+                instance.setParameterByName(parameterName, parameterValue);
             instance.set3DAttributes(RuntimeUtils.To3DAttributes(worldPosition));
             instance.start();
             instance.release();

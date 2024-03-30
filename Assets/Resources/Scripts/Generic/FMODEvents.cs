@@ -31,6 +31,9 @@ public class FMODEvents : MonoBehaviour
     [field: SerializeField] public EventReference clickUI { get; private set; }
     [field: SerializeField] public EventReference selectUI { get; private set; }
 
+    [field: Header("Other")]
+    [field: SerializeField] public EventReference beep { get; private set; }
+
     public static FMODEvents instance { get; private set; }
 
     public void Awake()

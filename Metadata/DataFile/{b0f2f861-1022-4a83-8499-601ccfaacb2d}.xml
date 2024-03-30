@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="DataFile" id="{b0f2f861-1022-4a83-8499-601ccfaacb2d}">
+		<property name="assetPath">
+			<value>Resources/Audio/Effects/Alien/UFOPulse - Trimmed.wav.meta</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{30b03428-61be-4dfc-bb9b-b60103080b46}</destination>
+		</relationship>
+	</object>
+</objects>
