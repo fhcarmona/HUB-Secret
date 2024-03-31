@@ -11,14 +11,26 @@ public class UFOEvent : MonoBehaviour
     public void Awake()
     {
         transform.parent.position = initialPos;
+        EventManager.current = Event.UFO;
     }
+
+    public void Update()
+    {
+        if (!EventManager.isPlayerInSecurityRoom)
+            Destroy(transform.parent.gameObject);
+    }   
 
     public void FixedUpdate()
     {
         transform.Rotate(new Vector3(0, 3, 0));
         transform.parent.Translate(Vector3.left * speed);
 
-        if (transform.parent.position.x < -100)
+        if (transform.parent.position.x < -50)
             Destroy(transform.parent.gameObject);
+    }
+
+    public void OnDestroy()
+    {
+        EventManager.current = Event.NONE;
     }
 }

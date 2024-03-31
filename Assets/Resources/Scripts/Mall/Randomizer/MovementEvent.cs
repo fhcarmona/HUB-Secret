@@ -8,11 +8,20 @@ public class MovementEvent : MonoBehaviour
 {
     private Light movementIndicator;
 
-    public void Start()
+    public void Awake()
     {
         movementIndicator = GetComponentInChildren<Light>();
+        EventManager.current = Event.MOVEMENT;
+    }
 
+    public void Start()
+    {
         StartCoroutine(LightSequence());
+    }
+
+    public void OnDestroy()
+    {
+        EventManager.current = Event.NONE;
     }
 
     public IEnumerator LightSequence()
@@ -40,5 +49,5 @@ public class MovementEvent : MonoBehaviour
         }
 
         Destroy(this);
-    }
+    }    
 }

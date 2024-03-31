@@ -15,13 +15,17 @@ public class CameraEvent : MonoBehaviour
     private const string AudioParamName = "CommunicationType";
     private const string MaterialName = "Material/Alien/WhiteNoise";
 
-    public void Start()
+    public void Awake()
     {
         rendererComponent = GetComponent<Renderer>();
+        EventManager.current = Event.CAMERA;
         originalMaterial = rendererComponent.material;
-        replaceMaterial = (Material) Resources.Load(MaterialName, typeof(Material)); ;
+        replaceMaterial = (Material)Resources.Load(MaterialName, typeof(Material)); ;
         whiteNoise = AudioManager.instance.CreateEventInstance(FMODEvents.instance.whiteNoise, transform.position);
+    }
 
+    public void Start()
+    {
         StartCoroutine(ExecuteEvent());
     }
 
@@ -45,8 +49,13 @@ public class CameraEvent : MonoBehaviour
 
         yield return new WaitUntil(() => state == PLAYBACK_STATE.STOPPED);
 
+        Destroy(this);
+    }
+
+    public void OnDestroy()
+    {
         whiteNoise.stop(STOP_MODE.IMMEDIATE);
         rendererComponent.material = originalMaterial;
-        Destroy(this);
+        EventManager.current = Event.NONE;
     }
 }

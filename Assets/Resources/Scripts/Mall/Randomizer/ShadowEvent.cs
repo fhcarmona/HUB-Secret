@@ -20,14 +20,35 @@ public class ShadowEvent : MonoBehaviour
         new Vector3(0, -90, 0)
     };
 
-    public IEnumerator Start()
+    public void Awake()
+    {
+        EventManager.current = Event.SHADOW;
+    }
+
+    public void Start()
+    {
+        StartCoroutine(SpawnAlien());
+    }
+
+    public void Update()
+    {
+        if (!EventManager.isPlayerInSecurityRoom)
+            Destroy(gameObject);
+    }
+
+    private void OnDestroy()
+    {
+        EventManager.current = Event.NONE;
+    }
+
+    private IEnumerator SpawnAlien()
     {
         int respawnRNG = Random.Range(0, respawnPoints.Length);
 
         transform.position = respawnPoints[respawnRNG];
         transform.Rotate(respawnRotation[respawnRNG], Space.Self);
 
-        yield return new WaitForSeconds(Random.Range(2, 5));
+        yield return new WaitForSeconds(Random.Range(10, 30));
 
         Destroy(gameObject);
     }

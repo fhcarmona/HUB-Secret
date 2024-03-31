@@ -1,17 +1,25 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class EventManager : MonoBehaviour
 {    
     [SerializeField] private GameObject[] eventsObject;
     [SerializeField] private GameObject[] monitors;
+    [SerializeField] private TextMeshProUGUI eventText;
 
-    private int delay;
-    private Event current;
+    private int delay;    
+    private const string eventDescription = "Evento Atual";
+    private const string playerTag = "Player";
 
-    void Awake()
+    public static Event current;
+    public static bool isPlayerInSecurityRoom;
+
+    public IEnumerator Start()
     {
+        yield return new WaitForSeconds(5);
+
         StartCoroutine(TimerEvent());
     }
 
@@ -20,35 +28,37 @@ public class EventManager : MonoBehaviour
         int chance = Random.Range(0, 100);
         int monitorRNG = Random.Range(0, monitors.Length);
 
+        eventText.text = null;
+
         switch (chance)
         {
             case >= 98: // 98-99 : 2
-                if (!current.Equals(Event.UFO))
+                if (!current.Equals(Event.UFO) && isPlayerInSecurityRoom)
                 {
-                    current = Event.UFO;
                     Instantiate(eventsObject[0]);
+                    eventText.text = $"{eventDescription} -> {current}";
                 }
                 break;
             case >= 92: // 92-97 : 6
-                if (!current.Equals(Event.SHADOW))
+                if (!current.Equals(Event.SHADOW) && isPlayerInSecurityRoom)
                 {
-                    current = Event.SHADOW;
                     Instantiate(eventsObject[1]);
+                    eventText.text = $"{eventDescription} -> {current}";
                 }
                 break;
             case >= 80: // 80-91 : 12
-                if (monitors[monitorRNG].GetComponent<MovementEvent>() == null)
+                if (monitors[monitorRNG].GetComponent<MovementEvent>() == null && !current.Equals(Event.MOVEMENT))
                 {
-                    current = Event.MOVEMENT;
                     monitors[monitorRNG].AddComponent<MovementEvent>();
+                    eventText.text = $"{eventDescription} -> {current}";
                 }
                 break;
             case >= 62: // 62-79 : 18
 
-                if (monitors[monitorRNG].GetComponent<CameraEvent>() == null)
+                if (monitors[monitorRNG].GetComponent<CameraEvent>() == null && !current.Equals(Event.CAMERA))
                 {
-                    current = Event.CAMERA;
                     monitors[monitorRNG].AddComponent<CameraEvent>();
+                    eventText.text = $"{eventDescription} -> {current}";
                 }
 
                 break;
@@ -57,9 +67,16 @@ public class EventManager : MonoBehaviour
                 break;            
         }
 
-        delay = 1;//Random.Range(5, 30); // 0.25min to 1.0min
+        delay = Random.Range(2, 6); // 0.25min to 1.0min
 
         Debug.Log($"Current: {current}, Delay: {delay}");
+
+        if(eventText.text != null)
+            eventText.gameObject.SetActive(true);
+
+        yield return new WaitUntil(() => current == Event.NONE);
+
+        eventText.gameObject.SetActive(false);
 
         yield return new WaitForSeconds(delay);
 
@@ -74,5 +91,23 @@ public class EventManager : MonoBehaviour
     public IEnumerator UniqueEvent()
     {
         yield return null;
+    }
+
+    public void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == playerTag)
+        {
+            isPlayerInSecurityRoom = true;
+            Debug.Log($"1. Esta na sala de segurança [{isPlayerInSecurityRoom}");
+        }
+    }
+
+    public void OnTriggerExit(Collider other)
+    {
+        if (other.tag == playerTag)
+        {
+            isPlayerInSecurityRoom = false;
+            Debug.Log($"2. Esta na sala de segurança [{isPlayerInSecurityRoom}");
+        }
     }
 }
