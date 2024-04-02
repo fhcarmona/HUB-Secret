@@ -212,6 +212,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: O_Fliperama_Orange
+    second: {fileID: 2100000, guid: 733cd6f64c30a3d4198862547efb20ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: O_LightGrey
     second: {fileID: 2100000, guid: d6750eac18c8c4b419ee320365ce1abe, type: 2}
   - first:
@@ -504,6 +509,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: O_Porcelain001.011
     second: {fileID: 2100000, guid: 2bdfc93d9b0369940879ab6ec70ff6f5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: O_Red
+    second: {fileID: 2100000, guid: 3fc17bb1acf3610488aa2a4131978013, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule

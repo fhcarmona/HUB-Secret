@@ -5,6 +5,11 @@ using UnityEngine;
 
 public class FMODEvents : MonoBehaviour
 {
+    [field: Header("Alien")]
+    [field: SerializeField] public EventReference ufo { get; private set; }
+    [field: SerializeField] public EventReference whiteNoise { get; private set; }
+    [field: SerializeField] public EventReference strangeLanguage { get; private set; }
+
     [field: Header("Ambience")]
     [field: SerializeField] public EventReference cityBackgroundAmbience { get; private set; }
     [field: SerializeField] public EventReference buttonAmbience { get; private set; }
@@ -25,6 +30,9 @@ public class FMODEvents : MonoBehaviour
     [field: Header("UI")]
     [field: SerializeField] public EventReference clickUI { get; private set; }
     [field: SerializeField] public EventReference selectUI { get; private set; }
+
+    [field: Header("Other")]
+    [field: SerializeField] public EventReference beep { get; private set; }
 
     public static FMODEvents instance { get; private set; }
 

@@ -37,13 +37,17 @@ namespace RMS
             RuntimeManager.PlayOneShot(reference, worldPosition);
         }
 
-        public void PlayOneShot(EventReference reference, Vector3 worldPosition, string parameterName, float parameterValue)
+        public EventInstance PlayOneShot(EventReference reference, Vector3 worldPosition, string parameterName, int parameterValue)
         {
             EventInstance instance = RuntimeManager.CreateInstance(reference);
-            instance.setParameterByName(parameterName, parameterValue);
+            
+            if(parameterName != null)
+                instance.setParameterByName(parameterName, parameterValue);
             instance.set3DAttributes(RuntimeUtils.To3DAttributes(worldPosition));
             instance.start();
             instance.release();
+
+            return instance;
         }
 
         public EventInstance CreateEventInstance(EventReference reference)
@@ -59,6 +63,8 @@ namespace RMS
             instance.set3DAttributes(RuntimeUtils.To3DAttributes(worldPosition));
             eventInstances.Add(instance);
             return instance;
-        }        
+        }
+
+
     }
 }
