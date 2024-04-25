@@ -7,568 +7,323 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: Blue
+    second: {fileID: 2100000, guid: f4e02a72fedf42d448e65b1095dfc297, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Blue 2
+    second: {fileID: 2100000, guid: bac92731b4832e346b944ec02ff7b6b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Brown
+    second: {fileID: 2100000, guid: 7dc857489270ac047a3394a4dbf63efa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: C_OfficeCeilling001
-    second: {fileID: 2100000, guid: 69919c2c8cf38484cb2f3c4c14f7d241, type: 2}
+    second: {fileID: 2100000, guid: 41bdfea6ac107a64fb516523d94e7316, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: C_PaintedPlaster017
-    second: {fileID: 2100000, guid: ff32c8a86ae92894da258992ac4051b6, type: 2}
+    second: {fileID: 2100000, guid: d6c244078f77d6b4480c15d93f3b4f6c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: CeillingSign
-    second: {fileID: 2100000, guid: 248015c04a8b50942941801eed512ee0, type: 2}
+    second: {fileID: 2100000, guid: e195e8094d9a4a3438d75808b1d97fc2, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: D_Metal009
-    second: {fileID: 2100000, guid: dc4474ebb30db0f49ba216da0712f182, type: 2}
+    second: {fileID: 2100000, guid: 5d48835f3b1113440923bd70a3140a6f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: D_Metal036
-    second: {fileID: 2100000, guid: 869642ff07680c74c8298749753b2eb3, type: 2}
+    second: {fileID: 2100000, guid: a5d8426aa3f033a4da01369f4914b851, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: D_MetalWalkway010
-    second: {fileID: 2100000, guid: fb04fba9850b78645935796d2eae722c, type: 2}
+    second: {fileID: 2100000, guid: a90ea55edc1cc5f4e954b1c8e3669a86, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: D_Wood028
-    second: {fileID: 2100000, guid: 99d75d7e641997248b8e29c186e74ca7, type: 2}
+    second: {fileID: 2100000, guid: 6f6fe43f23697c9488db6e41152e6bfc, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: D_Wood061
-    second: {fileID: 2100000, guid: 5d70127a493aaac4884566bd43c79525, type: 2}
+    second: {fileID: 2100000, guid: a5fab15ebfedbe4429c40e3ab5fb53ec, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: EmergencyExitSign
-    second: {fileID: 2100000, guid: 8f4888991bf8851469bdc7b7e93b6cf1, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: EmergencyExitSign.001
-    second: {fileID: 2100000, guid: 7bd14be603e7e4c41a1060b78b7e0eac, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: EmergencyExitSign.002
-    second: {fileID: 2100000, guid: 94569755c49335b40ae8d139c40fd5a4, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: EmergencyExitSign.003
-    second: {fileID: 2100000, guid: f774083829fc03f429c5bead9240f327, type: 2}
+    second: {fileID: 2100000, guid: 5d2bb6cd21098b845889c09c98392207, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: F_Carpet
-    second: {fileID: 2100000, guid: 12321e811932ce74c943031c7ff60f5f, type: 2}
+    second: {fileID: 2100000, guid: 345354bf36fbd0b41903960ef8bce79d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: F_Concrete
-    second: {fileID: 2100000, guid: 04f9032f6a37bd649844b74fda644433, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: F_Concrete.002
-    second: {fileID: 2100000, guid: 089af5362750e3445bcbd8b9d96fbc29, type: 2}
+    second: {fileID: 2100000, guid: 0e446e0ae7c7be841976effc78833691, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: F_DiamondPlate
-    second: {fileID: 2100000, guid: 9c60c3b957d75444aa92f0e47a4b9ed0, type: 2}
+    second: {fileID: 2100000, guid: bebae3a9a31bbe144829df3e91122d6b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: F_Fliperama
-    second: {fileID: 2100000, guid: 6dec33f3f4dfd9d4786639b513b65f15, type: 2}
+    second: {fileID: 2100000, guid: 1497cb38628198e44872b849b6340013, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: F_Terrazzo
-    second: {fileID: 2100000, guid: e98506e72297b8c4ea757a084a71db67, type: 2}
+    second: {fileID: 2100000, guid: d3dd60c3bbd53c041ba713192419c982, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: F_TerrazzoVenetianPolished001
-    second: {fileID: 2100000, guid: 27bbf14cc40a1b245a595f59738d9961, type: 2}
+    second: {fileID: 2100000, guid: e79a80d6777c47740b8ff7fc25faa778, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: F_TerrazzoVenetianPolished003
-    second: {fileID: 2100000, guid: b047cd848a6ed33408bd732e99855f2b, type: 2}
+    second: {fileID: 2100000, guid: ea736ecc448f84544aabf76c8195e5e5, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: F_Toilet
-    second: {fileID: 2100000, guid: 496fbb427cb3af240b6c313c95f441ac, type: 2}
+    second: {fileID: 2100000, guid: c7d393e261e13a94e8e59c7f34fd134d, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: F_Wood
-    second: {fileID: 2100000, guid: f1a476b8ea035834bb4736e0bb2f215c, type: 2}
+    second: {fileID: 2100000, guid: e5a623068c8e7a84b97cdfae070d04ba, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: FirstFloorMapTexture
-    second: {fileID: 2100000, guid: e6e3047971230c54c96c4bc69348e742, type: 2}
+    second: {fileID: 2100000, guid: 812fffdc5a7ca9449a39d49c737bdafc, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Glass
-    second: {fileID: 2100000, guid: 141b46399cf7e134aa635a51d5d31b64, type: 2}
+    second: {fileID: 2100000, guid: 0468a2c7dad7aa545bb89484bb78f2ee, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.001
-    second: {fileID: 2100000, guid: 0150db2a30ddc364f9f3a9dfa32e579f, type: 2}
+      name: Green
+    second: {fileID: 2100000, guid: 75c97db3495309c49af180bd4e818177, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.004
-    second: {fileID: 2100000, guid: 378078f8f51964c4e880ed6c26a67ffe, type: 2}
+      name: Grey
+    second: {fileID: 2100000, guid: 97e11bf3739556f4697b0954193a3bf7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.005
-    second: {fileID: 2100000, guid: 1b821c1850b66ed4ab064d1b92a06ed2, type: 2}
+      name: Grey 2
+    second: {fileID: 2100000, guid: af9aa105e1d83e9439f58c052f5b38c0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.006
-    second: {fileID: 2100000, guid: 4bfa8355960c9f44dbd0ad377eb6ff9a, type: 2}
+      name: Imphenzia_Brown
+    second: {fileID: 2100000, guid: fc463d7cf8882aa4eac7855399acbe54, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.007
-    second: {fileID: 2100000, guid: 6b90bd34c082966418f0d37d581a4537, type: 2}
+      name: Imphenzia_Brown_Light
+    second: {fileID: 2100000, guid: f581ed5b12e10f44d948b82cb39647cb, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.008
-    second: {fileID: 2100000, guid: 08f827431d165d141ace7e73111a94cc, type: 2}
+      name: Imphenzia_Green
+    second: {fileID: 2100000, guid: fa9cecc86221fd04b8eea6abca0fba4b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.009
-    second: {fileID: 2100000, guid: 5069fb9f44e8fb144bf82b761eb084f0, type: 2}
+      name: Imphenzia_Green_Light
+    second: {fileID: 2100000, guid: ad5296cb014ba79468db6eeab36dd87f, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.010
-    second: {fileID: 2100000, guid: 11ed6edb2f8e14f43bf29cbc2b4c228d, type: 2}
+      name: Imphenzia_Iron_001
+    second: {fileID: 2100000, guid: 6a29bfdc4e53f65478aa052112ab678b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material.011
-    second: {fileID: 2100000, guid: 00f8a0b9fd2ca56499431c400f3fe3c8, type: 2}
+      name: Imphenzia_Metal_001
+    second: {fileID: 2100000, guid: 4040af4a9d5207846aecf5be40fb8faa, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Imphenzia_Orange
+    second: {fileID: 2100000, guid: 573111f332e02bc43b8d652ae73525bd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Imphenzia_Orange_Light
+    second: {fileID: 2100000, guid: 148a407c27abc034bafa33035cdb23a9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Imphenzia_Purple_Dark
+    second: {fileID: 2100000, guid: f3b0a508a872ec043a807cb93bafabc6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Imphenzia_Red
+    second: {fileID: 2100000, guid: 1956aadff13bd53458e948a68c551193, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Imphenzia_Red_Light
+    second: {fileID: 2100000, guid: b343f03258433e341b26f6d4d1c9260a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Imphenzia_White
+    second: {fileID: 2100000, guid: 4906a5b8db49af3499b29a79b70f0b6e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Imphenzia_Wood_001
+    second: {fileID: 2100000, guid: 383c8188f029acf4290e39b36517f7db, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Imphenzia_Wood_002
+    second: {fileID: 2100000, guid: 8367730564758a54b8376da526eececd, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: O_BlackScreen
-    second: {fileID: 2100000, guid: e7bd98f10c4a7ae409214a5cd2682fd6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_BlackScreen.001
-    second: {fileID: 2100000, guid: b8356b3236d90104888a401171a67f4f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_BlackScreen.002
-    second: {fileID: 2100000, guid: 77b7c35f08708374e94070fe6ee21703, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_BlackScreen.003
-    second: {fileID: 2100000, guid: 5c0e54aaf81a91f4ea93da7a466db00c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_BlackScreen.004
-    second: {fileID: 2100000, guid: b3c0af309240f0b4f90af0d976fb4618, type: 2}
+    second: {fileID: 2100000, guid: 2d01f468db865614b8d6e08d6aae4690, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: O_BlackTrash
-    second: {fileID: 2100000, guid: dc15da413c29f6c4eaa7d9d1e2454891, type: 2}
+    second: {fileID: 2100000, guid: e3066f7dd2216354e92bd3a28678e0af, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: O_Fabric028
-    second: {fileID: 2100000, guid: 2e149261c17fcbe429a923f1696f4d67, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Fabric028.001
-    second: {fileID: 2100000, guid: cc1771661664cd248a59603533a5c409, type: 2}
+    second: {fileID: 2100000, guid: 494b5f908e63cad4b97d486d087b41ab, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: O_Fliperama_Orange
-    second: {fileID: 2100000, guid: 733cd6f64c30a3d4198862547efb20ba, type: 2}
+    second: {fileID: 2100000, guid: 7288785c98b205741b6bf14be84da982, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: O_LightGrey
-    second: {fileID: 2100000, guid: d6750eac18c8c4b419ee320365ce1abe, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_LightGrey.001
-    second: {fileID: 2100000, guid: afdf5c4a4f64db24eba103f819b4749c, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_LightGrey.002
-    second: {fileID: 2100000, guid: f3850af425790e040adf0c04c5332e31, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_LightGrey.003
-    second: {fileID: 2100000, guid: eff3112f70983f6409839972c3f30de7, type: 2}
+    second: {fileID: 2100000, guid: b273eb0e433a9134ea764140ae0a0926, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: O_Metal011
-    second: {fileID: 2100000, guid: a1d49b6b356811543bc913fe2129694f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Metal011.001
-    second: {fileID: 2100000, guid: 5b9e4ef031dbae14fb4f23a96436b8f2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Metal011.002
-    second: {fileID: 2100000, guid: aa3a750d7f29a564b9c771f79cd66e8b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Metal011.003
-    second: {fileID: 2100000, guid: 23a5ad799a02db942ba9c8f332e3288b, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Metal011.005
-    second: {fileID: 2100000, guid: 81fc655a7bfdb0b4e92d23013830c802, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Metal011.006
-    second: {fileID: 2100000, guid: 0fac1b309b2b65046b77080ee22586ab, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Metal011.008
-    second: {fileID: 2100000, guid: f83467f8285b1ae4b8abd7362c7e5934, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Metal011.009
-    second: {fileID: 2100000, guid: 39223fd2b54666e499c881be08882179, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Metal011.010
-    second: {fileID: 2100000, guid: 47377daec18c24a42bbecc3b295a48d0, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Metal011.011
-    second: {fileID: 2100000, guid: 03cc7e52d1b6047449263b6679c96ffd, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Metal011.013
-    second: {fileID: 2100000, guid: 1abb5df343b8d9a459171ea8e66355e9, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Metal011.014
-    second: {fileID: 2100000, guid: c7e1ef5f01d838549af3efbefa2b1833, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Metal011.016
-    second: {fileID: 2100000, guid: beeb70e8bda56554680e8f6b58bfa019, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Metal011.017
-    second: {fileID: 2100000, guid: 13c54ba7028ca2045b0aa70c7e06beb6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Metal011.018
-    second: {fileID: 2100000, guid: b7c89418712420146957d3e470762681, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Metal011.020
-    second: {fileID: 2100000, guid: 1c4a8a6beb38767409d2c38179b62f7d, type: 2}
+    second: {fileID: 2100000, guid: f265562d79f488248b677918ab461ecf, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: O_Metal014
-    second: {fileID: 2100000, guid: d2b6d297601b2064187e4bf9ef47ca8a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Metal014.001
-    second: {fileID: 2100000, guid: 81882c4d767699c4b8f814ddcdc2f453, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Metal014.005
-    second: {fileID: 2100000, guid: c19f4101fcef6ff4b875920f51bb58e7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Metal014.006
-    second: {fileID: 2100000, guid: cdd394692655f27429a4a907ce812047, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Metal014.007
-    second: {fileID: 2100000, guid: a32e82d5865f4f34c9f86eeafd02c8e0, type: 2}
+    second: {fileID: 2100000, guid: ac6936afb68770c4fa1a16afe2177df8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: O_Metal024
-    second: {fileID: 2100000, guid: 987d26ffb9422df47b3057cffa84f1f9, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Metal024.001
-    second: {fileID: 2100000, guid: a70550421d0f0b5429defc50a568a6f4, type: 2}
+    second: {fileID: 2100000, guid: a362ed4aab6da264f8d5806bfc95b9b4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: O_Metal027
-    second: {fileID: 2100000, guid: bee159dd4d742674a91b0bb6a35e948c, type: 2}
+    second: {fileID: 2100000, guid: 62dc1f810ae33384bb783f13f32aa351, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: O_Orange
-    second: {fileID: 2100000, guid: bd5a6df13d1d0f546b77dd821d7306d7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Orange.001
-    second: {fileID: 2100000, guid: aaedeb001a404564bb378082c8c4b567, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Orange.002
-    second: {fileID: 2100000, guid: 476311678e578ce4da5762f96d4ab206, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Orange.003
-    second: {fileID: 2100000, guid: e20e43fbe36b13040b8bd31c9c2983ce, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Orange.005
-    second: {fileID: 2100000, guid: 974327b728e09274f98a27ac1a70c689, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Orange.006
-    second: {fileID: 2100000, guid: 6bb29d7ee43f8be48918af162f7032d5, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Orange.008
-    second: {fileID: 2100000, guid: b029c5996123d62448e1d8b0ac0edb75, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Orange.009
-    second: {fileID: 2100000, guid: e2de3edf9e37e81479f1114e289bd344, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Orange.010
-    second: {fileID: 2100000, guid: fa02b42d53ed13845b999ac3193f0db2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Orange.011
-    second: {fileID: 2100000, guid: c1a27850fe521504ca21ea4fe922f266, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Orange.013
-    second: {fileID: 2100000, guid: 6be2f6a8c117f60499cb43dc3402aa28, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Orange.014
-    second: {fileID: 2100000, guid: 129f3b7b504aa32479d609430c6d5a14, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Orange.016
-    second: {fileID: 2100000, guid: fd0179e8846fa194184b6a485356d07e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Orange.017
-    second: {fileID: 2100000, guid: d670243cc2e69894ebde00c295210bab, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Orange.018
-    second: {fileID: 2100000, guid: a17576c5a9775f1468567e13c374cebb, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Orange.020
-    second: {fileID: 2100000, guid: 9316509867016404baea7b61f700540b, type: 2}
+    second: {fileID: 2100000, guid: 89dcfde5296102f458d0bafc1c07da3b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: O_PaintedWood005
-    second: {fileID: 2100000, guid: b64005725b4a6e048a2544eca3c8dbc8, type: 2}
+    second: {fileID: 2100000, guid: 67beb27ada2a289449058182cbe7a126, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: O_Pipe003
-    second: {fileID: 2100000, guid: 6ab73b0d93b5f51479784582fb2d3b87, type: 2}
+    second: {fileID: 2100000, guid: aa9c22b3bcb283c40a3a0d020e50d2dc, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: O_Plastic006
-    second: {fileID: 2100000, guid: 40b22874866992a47a9832325acf379f, type: 2}
+    second: {fileID: 2100000, guid: 33865b37ffcd138428f46a24b28408d7, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: O_Porcelain001
-    second: {fileID: 2100000, guid: 7fd0f35b968879143b7bc0b022ddc99f, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Porcelain001.001
-    second: {fileID: 2100000, guid: 41af7e8b35cefb246802181f251589d2, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Porcelain001.002
-    second: {fileID: 2100000, guid: 97026d7992a9a2f478e9f22dd8b386b8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Porcelain001.003
-    second: {fileID: 2100000, guid: 15cf5aefdf6cc7a4d8c48fa31e90adaa, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Porcelain001.004
-    second: {fileID: 2100000, guid: f43e72302ce3e0f439c975fbc5dc368a, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Porcelain001.005
-    second: {fileID: 2100000, guid: 3d536306e9d88364ca5a097788334911, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Porcelain001.006
-    second: {fileID: 2100000, guid: d73a4c574ac30454ea6976ab590790bc, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Porcelain001.007
-    second: {fileID: 2100000, guid: 72c66eb5f5c6de14facb93bec6d2e42e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Porcelain001.008
-    second: {fileID: 2100000, guid: 850dcf5221e9ee8439d9a04d4451f1ff, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Porcelain001.009
-    second: {fileID: 2100000, guid: b3753eee8227ae3438215be082d4c28d, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Porcelain001.010
-    second: {fileID: 2100000, guid: 9aabc266b0601e3448a7d699e72ab47e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Porcelain001.011
-    second: {fileID: 2100000, guid: 2bdfc93d9b0369940879ab6ec70ff6f5, type: 2}
+    second: {fileID: 2100000, guid: cd326d58344a4c0438fe13215ae0dc99, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: O_Red
-    second: {fileID: 2100000, guid: 3fc17bb1acf3610488aa2a4131978013, type: 2}
+    second: {fileID: 2100000, guid: 34d001724422e1a4f955e32c3a66d4aa, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: O_Screen
-    second: {fileID: 2100000, guid: dc5ab849b0b2cbb4da0fe9f72bc969db, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Screen.001
-    second: {fileID: 2100000, guid: 8d19bf0c67c2895429eb1aaa02decc46, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Screen.002
-    second: {fileID: 2100000, guid: ea2ef0f3e09ea9f458ed56e53ac61c89, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: O_Screen.003
-    second: {fileID: 2100000, guid: fdb76f3314f744b43ac07dcafd0ddb3b, type: 2}
+    second: {fileID: 2100000, guid: 11c096936c018c34cb48dd1b2b0ce829, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: O_Wood037
-    second: {fileID: 2100000, guid: 410c519563d1cd941a60028ee555fa25, type: 2}
+    second: {fileID: 2100000, guid: 1a7a06ee48a23ab42a8d35206b421068, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: O_Wood049
-    second: {fileID: 2100000, guid: cb9dca564a3cbdd44a082a6e5663c5ff, type: 2}
+    second: {fileID: 2100000, guid: c85f667ac0d02e942a4d6550a8a0c025, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Red
+    second: {fileID: 2100000, guid: 2e6ee8c6da2babd4f97c21fa8b424f3b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: SecondFloorMapTexture
-    second: {fileID: 2100000, guid: 6f9f62ebfef3cbf47ae452f97701ab79, type: 2}
+    second: {fileID: 2100000, guid: 8039f5fe0c3b6e9439bbfa96d577a0e3, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: ToiletSign
-    second: {fileID: 2100000, guid: 57caf1dc3c04a734d91a66b05209a7e2, type: 2}
+    second: {fileID: 2100000, guid: 5cef596075f70754b9bc80f3738a4edf, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: W_Plaster001
-    second: {fileID: 2100000, guid: f2d7a661c0848324aa454289d774d621, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: W_Plaster001.001
-    second: {fileID: 2100000, guid: 8b5fc284757763e4e9e97dd1c6e672df, type: 2}
+    second: {fileID: 2100000, guid: 9fed588e7155a3c488361e987b8f34d4, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: W_Plaster004
-    second: {fileID: 2100000, guid: 9a0be3cd6d8411f45aab213a3007eb98, type: 2}
+    second: {fileID: 2100000, guid: 6f24b6abd070b44468b7f742be100112, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White
+    second: {fileID: 2100000, guid: 907c5a6f0397f914c8a4ae3e13ebc69a, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

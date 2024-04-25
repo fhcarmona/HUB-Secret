@@ -38,33 +38,33 @@ public class ClawMachineController : MonoBehaviour
 
     public void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Keypad0))
+        if(Input.GetKeyDown(KeyCode.G))
             playerMovement.enabled = !playerMovement.isActiveAndEnabled;
 
         if (!playerMovement.isActiveAndEnabled && !cpuMove && !isScaling)
         {
             // Pickup
-            if (Input.GetKeyDown(KeyCode.Keypad5) && !hasGrabbed)
+            if (Input.GetKeyDown(KeyCode.Space) && !hasGrabbed)
             {
                 StartCoroutine(MoveClawUpDown());
             }
             // Left
-            else if (Input.GetKey(KeyCode.Keypad4) && !Input.GetKey(KeyCode.Keypad6))
+            else if ((Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) && !(Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)))
             {
                 StartCoroutine(MoveClawLeftRight(true));
             }
             // Right
-            else if (Input.GetKey(KeyCode.Keypad6) && !Input.GetKey(KeyCode.Keypad4))
+            else if ((Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) && !(Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)))
             {
                 StartCoroutine(MoveClawLeftRight(false));
             }
             // Forward
-            else if (Input.GetKey(KeyCode.Keypad8) && !Input.GetKey(KeyCode.Keypad2))
+            else if ((Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W)) && !(Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S)))
             {
                 StartCoroutine(MoveClawBackForward(false));
             }
             // Back
-            else if (Input.GetKey(KeyCode.Keypad2) && !Input.GetKey(KeyCode.Keypad8))
+            else if (((Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S)) && !(Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))))
             {
                 StartCoroutine(MoveClawBackForward(true));
             }
