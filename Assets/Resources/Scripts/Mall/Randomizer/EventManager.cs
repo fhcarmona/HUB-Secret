@@ -72,7 +72,7 @@ public class EventManager : MonoBehaviour
         Debug.Log($"Current: {current}, Delay: {delay}");
 
         if(eventText.text != null)
-            eventText.gameObject.SetActive(true);
+            eventText.gameObject.SetActive(false);
 
         yield return new WaitUntil(() => current == Event.NONE);
 
