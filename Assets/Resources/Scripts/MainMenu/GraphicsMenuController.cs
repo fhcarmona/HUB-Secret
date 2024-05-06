@@ -9,7 +9,7 @@ using UnityEngine.UI;
 
 namespace RMS
 {
-    public class Graphics : MonoBehaviour
+    public class GraphicsMenuController : MonoBehaviour
     {
         [Header("Dropdown List")]
         public TMP_Dropdown resolution;

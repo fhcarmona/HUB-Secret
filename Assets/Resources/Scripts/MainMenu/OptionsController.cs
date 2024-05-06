@@ -40,6 +40,12 @@ namespace RMS
             StartCoroutine(NotImplementedInfo());
         }
 
+        public void OnClickClose()
+        {
+            AudioManager.instance.PlayOneShot(FMODEvents.instance.clickUI, default);
+            gameObject.SetActive(false);
+        }
+
         private void DeactivateOptions(GameObject activeOption)
         {
             if (graphicsOptions.name != activeOption.name)
@@ -55,8 +61,11 @@ namespace RMS
                 accessibilityOptions.SetActive(false);
         }
 
-        IEnumerator NotImplementedInfo()
+        private IEnumerator NotImplementedInfo()
         {
+            if (notImplementedWindow.activeSelf)
+                yield break;
+
             notImplementedWindow.SetActive(true);
 
             yield return new WaitForSeconds(1);
