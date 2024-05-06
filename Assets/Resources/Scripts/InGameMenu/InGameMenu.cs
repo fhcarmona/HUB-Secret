@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 
 public class InGameMenu : MonoBehaviour
 {
+    public PlayerMovement playerMovement;
     public GameObject managers;
     public GameObject menuOptions;
     public GameObject inventory;
@@ -34,6 +35,7 @@ public class InGameMenu : MonoBehaviour
 
             menuOptions.gameObject.SetActive(!menuOptions.gameObject.activeSelf);
             inventory.gameObject.SetActive(!inventory.gameObject.activeSelf);
+            playerMovement.isPaused = menuOptions.activeSelf;
 
             UpdateInventoryImages(DataPersistenceSystem.playerModel.inventory);
         }

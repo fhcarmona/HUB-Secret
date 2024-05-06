@@ -63,9 +63,6 @@ namespace RMS
 
         private IEnumerator NotImplementedInfo()
         {
-            if (notImplementedWindow.activeSelf)
-                yield break;
-
             notImplementedWindow.SetActive(true);
 
             yield return new WaitForSeconds(1);

@@ -647,7 +647,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   screens:
   - {fileID: 1453134710}
-  - {fileID: 928065449}
 --- !u!1 &928065449
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,7 +662,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &928065450
 RectTransform:
   m_ObjectHideFlags: 0
@@ -822,6 +821,155 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 993201860}
   m_CullTransparentMesh: 1
+--- !u!1 &1191278011
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1191278012}
+  - component: {fileID: 1191278013}
+  m_Layer: 0
+  m_Name: FMODEvents
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1191278012
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191278011}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1329247670}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1191278013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191278011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ccb9e9aaaa8d634b895ccf5b68fbbce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <ufo>k__BackingField:
+    Guid:
+      Data1: -1194940559
+      Data2: 1090607576
+      Data3: -1273400181
+      Data4: -1771792012
+    Path: event:/Alien/UFO
+  <whiteNoise>k__BackingField:
+    Guid:
+      Data1: 729117282
+      Data2: 1152085644
+      Data3: 1957631651
+      Data4: 1226278589
+    Path: event:/Alien/WhiteNoise
+  <strangeLanguage>k__BackingField:
+    Guid:
+      Data1: 1711210092
+      Data2: 1278936745
+      Data3: -903428977
+      Data4: 437104015
+    Path: event:/Alien/StrangeLanguage
+  <cityBackgroundAmbience>k__BackingField:
+    Guid:
+      Data1: 1464135629
+      Data2: 1321762278
+      Data3: -892036168
+      Data4: -855944814
+    Path: event:/Ambience/CitySound
+  <buttonAmbience>k__BackingField:
+    Guid:
+      Data1: 1877321805
+      Data2: 1336772495
+      Data3: -1409076846
+      Data4: 254967862
+    Path: event:/Ambience/Button
+  <commonDoor>k__BackingField:
+    Guid:
+      Data1: -848177602
+      Data2: 1285649744
+      Data3: 1099703712
+      Data4: 833422715
+    Path: event:/Door/Common
+  <glassDoor>k__BackingField:
+    Guid:
+      Data1: 157784198
+      Data2: 1207358782
+      Data3: 658835858
+      Data4: 1286498297
+    Path: event:/Door/Glass
+  <metalDoor>k__BackingField:
+    Guid:
+      Data1: -572420563
+      Data2: 1334447346
+      Data3: 978014386
+      Data4: -1941072037
+    Path: event:/Door/Metal
+  <metalDoorLocked>k__BackingField:
+    Guid:
+      Data1: 755509026
+      Data2: 1253717949
+      Data3: 160080559
+      Data4: 813069427
+    Path: event:/Door/MetalLocked
+  <steelDoor>k__BackingField:
+    Guid:
+      Data1: -1524449723
+      Data2: 1096440234
+      Data3: 1791879102
+      Data4: -1085479952
+    Path: event:/Door/Steel
+  <walkingPlayer>k__BackingField:
+    Guid:
+      Data1: 879880578
+      Data2: 1177337833
+      Data3: 467175059
+      Data4: -1588340266
+    Path: event:/Player/Walking
+  <mainMenuTheme>k__BackingField:
+    Guid:
+      Data1: 1640887839
+      Data2: 1102516863
+      Data3: -1576475225
+      Data4: 1542916574
+    Path: event:/Themes/MainMenu
+  <clickUI>k__BackingField:
+    Guid:
+      Data1: 1715837642
+      Data2: 1182406916
+      Data3: 1171158656
+      Data4: -325735263
+    Path: event:/UI/Click
+  <selectUI>k__BackingField:
+    Guid:
+      Data1: -155927126
+      Data2: 1168949610
+      Data3: 1725747390
+      Data4: -1725087136
+    Path: event:/UI/Select
+  <beep>k__BackingField:
+    Guid:
+      Data1: 1634188384
+      Data2: 1205051980
+      Data3: 993912193
+      Data4: -1647943532
+    Path: event:/Other/Beep
 --- !u!1 &1328755131
 GameObject:
   m_ObjectHideFlags: 0
@@ -1044,6 +1192,51 @@ MonoBehaviour:
       enableFptlForForwardOpaque: 0
       enableBigTilePrepass: 0
       isFptlEnabled: 0
+--- !u!1 &1329247669
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1329247670}
+  - component: {fileID: 1329247671}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1329247670
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329247669}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1191278012}
+  m_Father: {fileID: 1962119738}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1329247671
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1329247669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ea9fec67aa12a34cbb545c2a88750df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1453134710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1059,7 +1252,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1453134711
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1367,6 +1560,38 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1962119737
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1962119738}
+  m_Layer: 0
+  m_Name: Managers
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1962119738
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962119737}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -13.2741785, y: 6.9106245, z: -11.645315}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1329247670}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1996548618
 GameObject:
   m_ObjectHideFlags: 0
@@ -1479,3 +1704,4 @@ SceneRoots:
   - {fileID: 1996548622}
   - {fileID: 775541987}
   - {fileID: 1867872936}
+  - {fileID: 1962119738}

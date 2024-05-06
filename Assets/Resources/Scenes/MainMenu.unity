@@ -2138,25 +2138,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <ufo>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -1194940559
+      Data2: 1090607576
+      Data3: -1273400181
+      Data4: -1771792012
+    Path: event:/Alien/UFO
   <whiteNoise>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 729117282
+      Data2: 1152085644
+      Data3: 1957631651
+      Data4: 1226278589
+    Path: event:/Alien/WhiteNoise
   <strangeLanguage>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1711210092
+      Data2: 1278936745
+      Data3: -903428977
+      Data4: 437104015
+    Path: event:/Alien/StrangeLanguage
   <cityBackgroundAmbience>k__BackingField:
     Guid:
       Data1: 1464135629
@@ -2194,11 +2194,11 @@ MonoBehaviour:
     Path: event:/Door/Metal
   <metalDoorLocked>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 755509026
+      Data2: 1253717949
+      Data3: 160080559
+      Data4: 813069427
+    Path: event:/Door/MetalLocked
   <steelDoor>k__BackingField:
     Guid:
       Data1: -1524449723
@@ -2236,11 +2236,11 @@ MonoBehaviour:
     Path: event:/UI/Select
   <beep>k__BackingField:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: 1634188384
+      Data2: 1205051980
+      Data3: 993912193
+      Data4: -1647943532
+    Path: event:/Other/Beep
 --- !u!1 &301413282
 GameObject:
   m_ObjectHideFlags: 0

@@ -38,6 +38,9 @@ public class ClawMachineController : MonoBehaviour
 
     public void Update()
     {
+        if (playerMovement.isPaused)
+            return;
+
         if(Input.GetKeyDown(KeyCode.G))
             playerMovement.enabled = !playerMovement.isActiveAndEnabled;
 
