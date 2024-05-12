@@ -1,3 +1,4 @@
+using RMS;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -27,6 +28,8 @@ public class EventManager : MonoBehaviour
     {
         int chance = Random.Range(0, 100);
         int monitorRNG = Random.Range(0, monitors.Length);
+
+        yield return new WaitWhile(() => DataPersistenceSystem.playerModel.isNewGame);
 
         eventText.text = null;
 
@@ -68,8 +71,6 @@ public class EventManager : MonoBehaviour
         }
 
         delay = Random.Range(2, 6); // 0.25min to 1.0min
-
-        Debug.Log($"Current: {current}, Delay: {delay}");
 
         if(eventText.text != null)
             eventText.gameObject.SetActive(false);

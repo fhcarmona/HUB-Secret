@@ -24,21 +24,20 @@ public class InGameMenu : MonoBehaviour
 
     public void Update()
     {
-        OpenInGameMenu();
+        if (Input.GetKeyDown(KeyCode.Escape) && !DataPersistenceSystem.playerModel.isNewGame)
+            OpenInGameMenu();
     }
 
     public void OpenInGameMenu()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            Cursor.visible = true;
+        menuOptions.gameObject.SetActive(!menuOptions.gameObject.activeSelf);
+        inventory.gameObject.SetActive(!inventory.gameObject.activeSelf);
+        playerMovement.isPaused = menuOptions.activeSelf;
 
-            menuOptions.gameObject.SetActive(!menuOptions.gameObject.activeSelf);
-            inventory.gameObject.SetActive(!inventory.gameObject.activeSelf);
-            playerMovement.isPaused = menuOptions.activeSelf;
+        Cursor.visible = menuOptions.activeSelf;
+        Cursor.lockState = menuOptions.activeSelf ? CursorLockMode.None : CursorLockMode.Confined;
 
-            UpdateInventoryImages(DataPersistenceSystem.playerModel.inventory);
-        }
+        UpdateInventoryImages(DataPersistenceSystem.playerModel.inventory);
     }
 
     public void OnClickSaveGame()
@@ -70,8 +69,6 @@ public class InGameMenu : MonoBehaviour
 
     public void OnClickQuitGame()
     {
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
         Application.Quit();
     }
 
