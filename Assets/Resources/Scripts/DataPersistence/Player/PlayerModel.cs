@@ -15,6 +15,7 @@ namespace RMS
         public float wRotation { get; set; }
         public InventoryModel inventory { get; set; }
         public QuestModel quest { get; set; }
+        public bool isNewGame;
 
         public PlayerModel()
         {
@@ -30,6 +31,7 @@ namespace RMS
             {
                 route = new bool[6]
             };
+            isNewGame = true;
         }
 
         public void Log()

@@ -28,6 +28,8 @@ public class PlayerMovement : MonoBehaviour
     const float minViewAngle = -60.0f;
     const float maxViewAngle = 45.0f;
 
+    public bool isPaused = false;
+
     public float DefaultSpeed
     {
         get { return defaultSpeed; }
@@ -60,7 +62,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void LateUpdate()
     {
-        MouseLook();
+        if (!isPaused)
+            MouseLook();
     }
 
     /// <summary>
@@ -68,6 +71,9 @@ public class PlayerMovement : MonoBehaviour
     /// </summary>
     private void MovePlayer()
     {
+        if (isPaused)
+            return;
+
         if (isMoving)
         {
             playerNewPos.x = Input.GetAxis(xKeyboardName) * walkSpeed;
@@ -84,6 +90,9 @@ public class PlayerMovement : MonoBehaviour
     /// </summary>
     private void MouseLook()
     {
+        if (isPaused)
+            return;
+
         upDownMovement -= Input.GetAxis(yMouseName) * xMouseSensibility;
         upDownMovement = Mathf.Clamp(upDownMovement, minViewAngle, maxViewAngle);
         lateralMovement += Input.GetAxis(xMouseName) * zMouseSensibility;
@@ -103,6 +112,12 @@ public class PlayerMovement : MonoBehaviour
 
     public void PlayerIsMoving()
     {
+        if (isPaused)
+        {
+            isMoving = false;
+            return;
+        }
+
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D) || 
             Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.RightArrow))
             isMoving = true;
@@ -117,6 +132,12 @@ public class PlayerMovement : MonoBehaviour
 
     public void UpdateSound()
     {
+        if (isPaused)
+        {
+            playerFootsteps.stop(STOP_MODE.ALLOWFADEOUT);
+            return;
+        }
+
         if (isMoving)
         {
             playerFootsteps.getPlaybackState(out PLAYBACK_STATE playerbackState);

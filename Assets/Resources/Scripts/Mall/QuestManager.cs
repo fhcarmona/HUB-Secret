@@ -29,10 +29,7 @@ public class QuestManager : MonoBehaviour
 
     public void SetPaper(int pageIndex)
     {
-        if (paperContent?[pageIndex] != null)
-        {
-            clipboardPaper.text = paperContent[pageIndex];
-        }
+        clipboardPaper.text = paperContent[pageIndex];
     }
 
     public void PreviousPaper()
@@ -45,7 +42,7 @@ public class QuestManager : MonoBehaviour
 
     public void NextPaper()
     {
-        if (currentPaper >= paperContent.Length)
+        if (currentPaper == paperContent.Length - 1)
             return;
 
         SetPaper(++currentPaper);
