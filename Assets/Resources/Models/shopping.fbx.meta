@@ -212,6 +212,11 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: O_BlackHole
+    second: {fileID: 2100000, guid: 2d38bddf7856bfb45b481a1623233551, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: O_BlackScreen
     second: {fileID: 2100000, guid: 2d01f468db865614b8d6e08d6aae4690, type: 2}
   - first:
@@ -319,6 +324,61 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: O_Porcelain001
     second: {fileID: 2100000, guid: cd326d58344a4c0438fe13215ae0dc99, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: O_Porcelain001.001
+    second: {fileID: 2100000, guid: d8734812723fe1d4e8bba3c212eab1d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: O_Porcelain001.002
+    second: {fileID: 2100000, guid: 59de2090726ea4643b22d6364e2dcb73, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: O_Porcelain001.003
+    second: {fileID: 2100000, guid: fa7e3fcf1ddb6a449a3134162603220d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: O_Porcelain001.004
+    second: {fileID: 2100000, guid: 8aa702682ddc0784db6065dbcd0c53cf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: O_Porcelain001.005
+    second: {fileID: 2100000, guid: 5aa6fe46bbc31704fbe8458302df147f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: O_Porcelain001.006
+    second: {fileID: 2100000, guid: 998af933af9f4934bab7464b84b71ef3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: O_Porcelain001.007
+    second: {fileID: 2100000, guid: 6176118cbae6e9b4fa129b67655344b4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: O_Porcelain001.008
+    second: {fileID: 2100000, guid: 97e0f7baaa6fc374c9e94c43a18aba16, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: O_Porcelain001.009
+    second: {fileID: 2100000, guid: 7d0703adff12c8d4bbe6b8cd84b8f06c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: O_Porcelain001.010
+    second: {fileID: 2100000, guid: b3d20044f5b8e2744a58341e68b2284c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: O_Porcelain001.011
+    second: {fileID: 2100000, guid: 73d5104f3d7d0b742acfce9bc50823d8, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
