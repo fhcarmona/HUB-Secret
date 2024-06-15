@@ -1,3 +1,4 @@
+using FMOD.Studio;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -25,6 +26,9 @@ public class BlackHoleEvent : MonoBehaviour
     private void OnTriggerExit(Collider other)
     {
         StartCoroutine(eventManager.TriggerEvent(1, false));
+
+        if(eventManager != null)
+            eventManager.eventInstance.stop(STOP_MODE.IMMEDIATE);
 
         blackHole.transform.localScale = originalScale;
         elapsed = 0;
