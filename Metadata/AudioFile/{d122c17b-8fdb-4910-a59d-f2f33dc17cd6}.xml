@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{d122c17b-8fdb-4910-a59d-f2f33dc17cd6}">
+		<property name="assetPath">
+			<value>Resources/Audio/Effects/Universe/blackhole-nasa.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>34.055999999999997</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{30b03428-61be-4dfc-bb9b-b60103080b46}</destination>
+		</relationship>
+	</object>
+</objects>

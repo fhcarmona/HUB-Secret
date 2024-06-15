@@ -1,3 +1,4 @@
+using FMOD.Studio;
 using RMS;
 using System.Collections;
 using System.Collections.Generic;
@@ -16,6 +17,8 @@ public class EventManager : MonoBehaviour
 
     public static Event current;
     public static bool isPlayerInSecurityRoom;
+
+    public EventInstance eventInstance { get; private set; }
 
     public IEnumerator Start()
     {
@@ -84,8 +87,19 @@ public class EventManager : MonoBehaviour
         StartCoroutine(TimerEvent());
     }
 
-    public IEnumerator TriggerEvent()
+    public IEnumerator TriggerEvent(int triggerEvent, bool condition)
     {
+        int chance = Random.Range(0, 100);
+
+        // Blackhole
+        if (triggerEvent == 1 && (chance >= 95 || !condition))
+        {
+            eventsObject[2].SetActive(condition);
+
+            if (condition)
+                eventInstance = AudioManager.instance.PlayOneShot(FMODEvents.instance.blackhole, eventsObject[2].transform.position, null, -1);                
+        }
+
         yield return null;
     }
 
@@ -99,7 +113,6 @@ public class EventManager : MonoBehaviour
         if (other.tag == playerTag)
         {
             isPlayerInSecurityRoom = true;
-            Debug.Log($"1. Esta na sala de segurança [{isPlayerInSecurityRoom}");
         }
     }
 
@@ -108,7 +121,6 @@ public class EventManager : MonoBehaviour
         if (other.tag == playerTag)
         {
             isPlayerInSecurityRoom = false;
-            Debug.Log($"2. Esta na sala de segurança [{isPlayerInSecurityRoom}");
         }
     }
 }
