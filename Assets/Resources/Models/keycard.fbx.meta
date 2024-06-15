@@ -3,7 +3,22 @@ guid: d2009fa95ff75734ba95df28bac4c344
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: aluminum
+    second: {fileID: 2100000, guid: 8dcae8e90726c55458d3f5b5f6feca7d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: card
+    second: {fileID: 2100000, guid: 897d379160690d24d9d0b461d4d109e2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: cord
+    second: {fileID: 2100000, guid: 0689c752469cdd641a027f3174ec11c9, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
