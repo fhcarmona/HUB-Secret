@@ -58,7 +58,7 @@ public class MallManager : MonoBehaviour
     {
         ShowCurrentStep();
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.1f);
         yield return new WaitUntil(() => Input.anyKeyDown && !Input.GetKeyDown(KeyCode.Mouse0) && !Input.GetKeyDown(KeyCode.Mouse1));        
 
         steps++;
