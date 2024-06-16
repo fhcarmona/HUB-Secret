@@ -11,17 +11,18 @@ namespace RMS.Controller
 
         public void PickupItem()
         {
-            if (name.Equals("keycard"))
+            Debug.Log($"PickupItem.name: {name.ToLower()}");
+            if (name.ToLower().Equals("keycard"))
             {
                 DataPersistenceSystem.playerModel.inventory.hasKeyCard = true;
             }
-            else if (name.Equals("radio"))
+            else if (name.ToLower().Equals("radio"))
             {
                 DataPersistenceSystem.playerModel.inventory.hasRadio = true;
             }
-            else if (name.Equals("artifact"))
+            else if (name.ToLower().Equals("artifact"))
             {
-                DataPersistenceSystem.playerModel.inventory.hasRadio = true;
+                DataPersistenceSystem.playerModel.inventory.hasArtifact = true;
             }
 
             Destroy(gameObject);
