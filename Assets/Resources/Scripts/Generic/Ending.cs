@@ -42,6 +42,7 @@ public class Ending : MonoBehaviour
 
     IEnumerator RadioNotification()
     {
+        AudioManager.instance.PlayOneShot(FMODEvents.instance.walkieTalkie, playerScript.transform.position);
         radioComunication.SetActive(true);
         yield return new WaitForSeconds(3);
         radioComunication.SetActive(false);

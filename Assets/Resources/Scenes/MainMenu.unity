@@ -1212,7 +1212,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Audio
+  m_text: "\xC1udio"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 28fed3e49d96a0f4ca71f75e00a38c6a, type: 2}
   m_sharedMaterial: {fileID: -4442372157095894759, guid: 28fed3e49d96a0f4ca71f75e00a38c6a,
@@ -7998,7 +7998,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 365.25, y: -25}
+  m_AnchoredPosition: {x: 730.5, y: -25}
   m_SizeDelta: {x: 235, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1036431402
@@ -10621,7 +10621,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1527438117
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13049,7 +13049,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 121.75, y: -25}
+  m_AnchoredPosition: {x: 243.5, y: -25}
   m_SizeDelta: {x: 235, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1893454253

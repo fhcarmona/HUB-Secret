@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="DataFile" id="{0d534dfe-b65d-41dc-90a8-33e81090c9e9}">
+		<property name="assetPath">
+			<value>Resources/Audio/Effects/Inventary/walkie-talkie.mp3.meta</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{30b03428-61be-4dfc-bb9b-b60103080b46}</destination>
+		</relationship>
+	</object>
+</objects>
