@@ -13,6 +13,7 @@ public class MallManager : MonoBehaviour
     public GameObject keyCard;
     public GameObject radio;
     public GameObject[] introScreens;
+    public GameObject controlInfo;
 
     private EventInstance cityBackgroundSound;
     private int steps = 0;
@@ -25,6 +26,12 @@ public class MallManager : MonoBehaviour
         SetLoadedPlayerData();
         Cursor.lockState = CursorLockMode.Confined;
         Cursor.visible = false;
+    }
+
+    public void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.H))
+            controlInfo.SetActive(!controlInfo.activeSelf);
     }
 
     public void SetLoadedPlayerData()
