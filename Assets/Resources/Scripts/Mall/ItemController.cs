@@ -11,7 +11,6 @@ namespace RMS.Controller
 
         public void PickupItem()
         {
-            Debug.Log($"PickupItem.name: {name.ToLower()}");
             if (name.ToLower().Equals("keycard"))
             {
                 DataPersistenceSystem.playerModel.inventory.hasKeyCard = true;

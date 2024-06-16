@@ -69,7 +69,6 @@ namespace RMS.Player
             {
                 if (isRaycastHitting)
                 {
-                    Debug.Log(hit.transform.name);
                     if (hit.transform.TryGetComponent(out DoorController door))
                     {
                         door.ChangeDoorAnimation();
