@@ -72,7 +72,7 @@ public class ClawMachineController : MonoBehaviour
                 StartCoroutine(MoveClawBackForward(true));
             }
 
-            if (Input.GetKeyDown(KeyCode.E))
+            if (Input.GetKeyDown(KeyCode.E) && secondaryCamera.gameObject.activeSelf)
                 ChangeCamera();
         }
     }
