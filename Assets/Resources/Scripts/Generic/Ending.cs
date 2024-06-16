@@ -8,6 +8,7 @@ public class Ending : MonoBehaviour
     public GameObject endingScreen;
     public PlayerMovement playerScript;
     public DoorController doorController;
+    public GameObject radioComunication;
 
     public void OnTriggerEnter()
     {
@@ -29,12 +30,21 @@ public class Ending : MonoBehaviour
                 {
                     doorController.isLocked = false;
                     doorController.ChangeDoorAnimation();
+
+                    StartCoroutine(RadioNotification());
                 }
 
                 artifactQuest.artifactNotification = true;
                 DataPersistenceSystem.playerModel.quest = artifactQuest;
             }
         }
+    }
+
+    IEnumerator RadioNotification()
+    {
+        radioComunication.SetActive(true);
+        yield return new WaitForSeconds(3);
+        radioComunication.SetActive(false);
     }
 
     IEnumerator DemoComplete()
