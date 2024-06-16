@@ -5,6 +5,9 @@ using UnityEngine.Events;
 [RequireComponent (typeof(Animator))]
 public class ClawMachineController : MonoBehaviour
 {
+    [SerializeField] private Camera primaryCamera;
+    [SerializeField] private Camera secondaryCamera;
+
     public Vector3 resetPosition;
     
     public bool cpuMove = false;
@@ -41,9 +44,6 @@ public class ClawMachineController : MonoBehaviour
         if (playerMovement.isPaused)
             return;
 
-        if(Input.GetKeyDown(KeyCode.G))
-            playerMovement.enabled = !playerMovement.isActiveAndEnabled;
-
         if (!playerMovement.isActiveAndEnabled && !cpuMove && !isScaling)
         {
             // Pickup
@@ -71,6 +71,9 @@ public class ClawMachineController : MonoBehaviour
             {
                 StartCoroutine(MoveClawBackForward(true));
             }
+
+            if (Input.GetKeyDown(KeyCode.E))
+                ChangeCamera();
         }
     }
 
@@ -159,5 +162,25 @@ public class ClawMachineController : MonoBehaviour
 
         clawParent.localPosition = Vector3.MoveTowards(clawParent.localPosition, localPosition, 0.01f);
         yield return new WaitForEndOfFrame();
+    }
+
+    public void ChangeCamera()
+    {
+        playerMovement.enabled = !playerMovement.isActiveAndEnabled;
+
+        if (playerMovement.enabled)
+        {
+            secondaryCamera.gameObject.SetActive(false);
+            primaryCamera.gameObject.SetActive(true);
+
+            playerMovement.gameObject.SetActive(true);
+        }
+        else
+        {
+            primaryCamera.gameObject.SetActive(false);
+            secondaryCamera.gameObject.SetActive(true);
+
+            playerMovement.gameObject.SetActive(false);
+        }
     }
 }

@@ -19,6 +19,10 @@ namespace RMS.Controller
             {
                 DataPersistenceSystem.playerModel.inventory.hasRadio = true;
             }
+            else if (name.Equals("artifact"))
+            {
+                DataPersistenceSystem.playerModel.inventory.hasRadio = true;
+            }
 
             Destroy(gameObject);
         }

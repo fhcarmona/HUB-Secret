@@ -69,6 +69,7 @@ namespace RMS.Player
             {
                 if (isRaycastHitting)
                 {
+                    Debug.Log(hit.transform.name);
                     if (hit.transform.TryGetComponent(out DoorController door))
                     {
                         door.ChangeDoorAnimation();
@@ -80,6 +81,10 @@ namespace RMS.Player
                     else if (hit.transform.TryGetComponent(out SecurityCameraSystem securityCamera))
                     {
                         securityCamera.ChangeCamera();
+                    }
+                    else if (hit.transform.parent.TryGetComponent(out ClawMachineController clawMachine))
+                    {
+                        clawMachine.ChangeCamera();
                     }
                 }
             }
