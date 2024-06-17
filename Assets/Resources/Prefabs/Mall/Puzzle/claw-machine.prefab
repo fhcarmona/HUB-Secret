@@ -60,7 +60,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6bb7ffcd3109634a8d80ee903c572a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clawSpeed: 1
+  resetPosition: {x: 0, y: 0, z: 0}
+  cpuMove: 0
+  isScaling: 0
+  hasGrabbed: 0
   clawSupport: {fileID: 8192769609321867344}
   armature: {fileID: 7875621413168032765}
   playerMovement: {fileID: 0}
@@ -1457,7 +1460,6 @@ GameObject:
   - component: {fileID: 5977591278232652736}
   - component: {fileID: 4636699889717533992}
   - component: {fileID: 3737779883512802811}
-  - component: {fileID: 7136336414583562538}
   m_Layer: 0
   m_Name: ClawMachine
   m_TagString: Untagged
@@ -1532,28 +1534,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7136336414583562538
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4837264091392655067}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 5
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 1062667978219356456, guid: c24fcbf081dc69646b5478fbde32cc78, type: 3}
 --- !u!1 &4851735827204364032
 GameObject:
   m_ObjectHideFlags: 0
@@ -2721,6 +2701,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baec79804af1fb846abe31387496b5c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  originPosition: {fileID: 0}
+  clawMachineController: {fileID: 0}
 --- !u!1 &8171006888738887315
 GameObject:
   m_ObjectHideFlags: 0

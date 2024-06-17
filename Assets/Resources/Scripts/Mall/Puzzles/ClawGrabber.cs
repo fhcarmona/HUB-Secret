@@ -14,7 +14,7 @@ public class ClawGrabber : MonoBehaviour
     public void Start()
     {
         clawCollider = GetComponent<Collider>();
-        finalPos = new Vector3(-0.1f, 0f, -0.3f);
+        finalPos = new Vector3(-0.1f, 0f, -0.4f);
     }
 
     public void OnTriggerEnter(Collider other)
@@ -68,5 +68,6 @@ public class ClawGrabber : MonoBehaviour
         }
 
         clawMachineController.cpuMove = false;
+        clawMachineController.ChangeCamera();
     }
 }

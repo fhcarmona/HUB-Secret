@@ -37,6 +37,9 @@ public class FMODEvents : MonoBehaviour
     [field: Header("Universe")]
     [field: SerializeField] public EventReference blackhole { get; private set; }
 
+    [field: Header("Inventory")]
+    [field: SerializeField] public EventReference walkieTalkie { get; private set; }
+
     public static FMODEvents instance { get; private set; }
 
     public void Awake()

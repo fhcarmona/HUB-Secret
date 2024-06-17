@@ -12,6 +12,18 @@ public class DoorController : MonoBehaviour
     private const string isDoorOpenName = "isDoorOpen";
     private const string doorTypeParameter = "DoorStatus";
 
+    public void Awake()
+    {
+        if (name == "MetalDoorParent")
+        {
+            if (DataPersistenceSystem.playerModel.inventory.hasArtifact || DataPersistenceSystem.playerModel.quest.artifactNotification)
+            {
+                isLocked = false;
+                ChangeDoorAnimation();
+            }
+        }
+    }
+
     public void ChangeDoorAnimation()
     {
         bool[] route = DataPersistenceSystem.playerModel.quest.route;

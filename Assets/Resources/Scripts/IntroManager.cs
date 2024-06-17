@@ -10,7 +10,7 @@ public class IntroManager : MonoBehaviour
 
     private const string mainMenuSceneName = "MainMenu";
 
-    private void Start()
+    private void Awake()
     {
         ShowCurrentStep();
     }

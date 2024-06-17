@@ -9,6 +9,7 @@ namespace RMS
         public bool hasLantern { get; set; }
         public bool hasKeyCard { get; set; }
         public bool hasRadio { get; set; }
+        public bool hasArtifact { get; set; }
         public bool hasClipboard { get; set; }
         public int tokenQuantity { get; set; }
 
@@ -17,13 +18,14 @@ namespace RMS
             hasLantern = false;
             hasKeyCard = false;
             hasRadio = false;
+            hasArtifact = false;
             hasClipboard = false;
             tokenQuantity = 0;
         }
 
         public void Log()
         {
-            Debug.Log($"hasLantern[{hasLantern}], hasKeyCard[{hasKeyCard}], hasRadio[{hasRadio}], hasClipboard[{hasClipboard}], tokenQuantity[{tokenQuantity}]");
+            Debug.Log($"hasLantern[{hasLantern}], hasKeyCard[{hasKeyCard}], hasRadio[{hasRadio}], hasArtifact[{hasArtifact}], hasClipboard[{hasClipboard}], tokenQuantity[{tokenQuantity}]");
         }
     }
 }

@@ -81,6 +81,10 @@ namespace RMS.Player
                     {
                         securityCamera.ChangeCamera();
                     }
+                    else if (hit.transform.parent.TryGetComponent(out ClawMachineController clawMachine))
+                    {
+                        clawMachine.ChangeCamera();
+                    }
                 }
             }
         }
