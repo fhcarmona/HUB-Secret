@@ -11,11 +11,13 @@ public class InGameMenu : MonoBehaviour
     public GameObject keyCardInventory;
     public GameObject radioInventory;
     public GameObject clipboardInventory;
+    public GameObject confirmationPopup;
 
     private const string MainMenuSceneName = "MainMenu";
     private const string MallSceneName = "Mall";
 
     private PlayerManager playerManager;
+    private int confirmationType = -1;
 
     public void Awake()
     {
@@ -36,6 +38,9 @@ public class InGameMenu : MonoBehaviour
 
         Cursor.visible = menuOptions.activeSelf;
         Cursor.lockState = menuOptions.activeSelf ? CursorLockMode.None : CursorLockMode.Confined;
+
+        if(!menuOptions.activeSelf)
+            confirmationType = -1;
 
         UpdateInventoryImages(DataPersistenceSystem.playerModel.inventory);
     }
@@ -59,17 +64,40 @@ public class InGameMenu : MonoBehaviour
 
     public void OnClickLoadGame()
     {
-        LoadingPersistence.LoadScene(MallSceneName);
+        menuOptions.SetActive(false);
+        confirmationPopup.SetActive(true);
+        confirmationType = 0;
     }
 
     public void OnClickMainMenu()
     {
-        SceneManager.LoadScene(MainMenuSceneName);
+        menuOptions.SetActive(false);
+        confirmationPopup.SetActive(true);
+        confirmationType = 1;
     }
 
     public void OnClickQuitGame()
     {
-        Application.Quit();
+        menuOptions.SetActive(false);
+        confirmationPopup.SetActive(true);
+        confirmationType = 2;
+    }
+
+    public void OnClickConfirmPopup()
+    {
+        if (confirmationType == 0)
+            LoadingPersistence.LoadScene(MallSceneName);
+        else if (confirmationType == 1)
+            SceneManager.LoadScene(MainMenuSceneName);
+        else if (confirmationType == 2)
+            Application.Quit();
+    }
+
+    public void OnClickCancelPopup()
+    {
+        confirmationPopup.SetActive(false);
+        menuOptions.SetActive(true);
+        confirmationType = -1;
     }
 
     public void UpdateInventoryImages(InventoryModel inventory)
