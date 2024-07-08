@@ -9,6 +9,7 @@ public class Ending : MonoBehaviour
     public PlayerMovement playerScript;
     public DoorController doorController;
     public GameObject radioComunication;
+    public ClawMachineController clawMachineController;
 
     public void OnTriggerEnter()
     {
@@ -34,6 +35,7 @@ public class Ending : MonoBehaviour
                     StartCoroutine(RadioNotification());
                 }
 
+                clawMachineController.enabled = true;
                 artifactQuest.artifactNotification = true;
                 DataPersistenceSystem.playerModel.quest = artifactQuest;
             }
